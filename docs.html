@@ -1,15 +1,15 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>docs - kouto swiss - A complete CSS framework for Stylus</title><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="styles/styles.css"><!--if lt IE 9script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
---></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.8.8</strong>, build on top of Stylus <strong class="stylus">v0.47.1</strong></p></section><div class="docs"><h2>reset</h2><article id="meyer-reset"><h1 id="-meyer-reset-"><code>meyer-reset()</code></h1>
+--></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.9.0</strong>, build on top of Stylus <strong class="stylus">v0.47.1</strong></p></section><div class="docs"><h2>reset</h2><article id="meyer-reset"><h1 id="-meyer-reset-"><code>meyer-reset()</code></h1>
 <p>A global reset, using&apos;s the <a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer&apos;s CSS reset v2</a>.</p>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus">meyer-<span class="keyword">reset</span>()
+<pre><code class="lang-stylus">meyer-<span class="operator"><span class="keyword">reset</span>()</span>
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">html</span>, <span class="tag">body</span>, <span class="tag">div</span>, <span class="tag">span</span>, <span class="tag">applet</span>, <span class="tag">object</span>, <span class="tag">iframe</span>, <span class="tag">h1</span>, <span class="tag">h2</span>, <span class="tag">h3</span>, <span class="tag">h4</span>, <span class="tag">h5</span>, <span class="tag">h6</span>, <span class="tag">p</span>, <span class="tag">blockquote</span>, <span class="tag">pre</span>, <span class="tag">a</span>, <span class="tag">abbr</span>, <span class="tag">acronym</span>, <span class="tag">address</span>, <span class="tag">big</span>, <span class="tag">cite</span>, <span class="tag">code</span>, <span class="tag">del</span>, <span class="tag">dfn</span>, <span class="tag">em</span>, <span class="tag">img</span>, <span class="tag">ins</span>, <span class="tag">kbd</span>, <span class="tag">q</span>, <span class="tag">s</span>, <span class="tag">samp</span>, <span class="tag">small</span>, <span class="tag">strike</span>, <span class="tag">strong</span>, <span class="tag">sub</span>, <span class="tag">sup</span>, <span class="tag">tt</span>, <span class="tag">var</span>, <span class="tag">b</span>, <span class="tag">u</span>, <span class="tag">i</span>, <span class="tag">center</span>, <span class="tag">dl</span>, <span class="tag">dt</span>, <span class="tag">dd</span>, <span class="tag">ol</span>, <span class="tag">ul</span>, <span class="tag">li</span>, <span class="tag">fieldset</span>, <span class="tag">form</span>, <span class="tag">label</span>, <span class="tag">legend</span>, <span class="tag">table</span>, <span class="tag">caption</span>, <span class="tag">tbody</span>, <span class="tag">tfoot</span>, <span class="tag">thead</span>, <span class="tag">tr</span>, <span class="tag">th</span>, <span class="tag">td</span>, <span class="tag">article</span>, <span class="tag">aside</span>, <span class="tag">canvas</span>, <span class="tag">details</span>, <span class="tag">embed</span>, <span class="tag">figure</span>, <span class="tag">figcaption</span>, <span class="tag">footer</span>, <span class="tag">header</span>, <span class="tag">hgroup</span>, <span class="tag">menu</span>, <span class="tag">nav</span>, <span class="tag">output</span>, <span class="tag">ruby</span>, <span class="tag">section</span>, <span class="tag">summary</span>, <span class="tag">time</span>, <span class="tag">mark</span>, <span class="tag">audio</span>, <span class="tag">video</span> <span class="rules">{
   <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;
   <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
   <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">0</span></span></span>;
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">100</span>%</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">100%</span></span></span>;
   <span class="rule"><span class="attribute">font</span>:<span class="value"> inherit</span></span>;
   <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> baseline</span></span>;
 <span class="rule">}</span></span>
@@ -37,7 +37,7 @@
 </article><article id="box-sizing-reset"><h1 id="-box-sizing-reset-"><code>box-sizing-reset()</code></h1>
 <p>The <em>box-sizing reset</em>, setting the <code>box-sizing</code> property to <code>border-box</code>.<br>For more information, read the post &quot;<a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">Box-sizing: Border-box FTW</a>&quot; by Paul Irish.</p>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus">box<span class="attribute">-sizing</span><span class="attribute">-reset</span>()
+<pre><code class="lang-stylus"><span class="keyword">box</span>-sizing-reset()
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css">*,
@@ -55,22 +55,22 @@
 <li><code>fallback</code>: a fallback value for unsupported browsers. <em>Optional</em>.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="tag">body</span>
-    <span class="attribute">width</span> <span class="function">calc( <span class="string">&quot;100% - 80px&quot;</span> )</span>
+<pre><code class="lang-stylus"><span class="keyword">body</span>
+    width calc( <span class="string">&quot;100% - 80px&quot;</span> )
 
-<span class="tag">body</span>
-    <span class="attribute">width</span> <span class="function">calc( <span class="string">&quot;100% - 80px&quot;</span>, <span class="number">90</span>% )</span>
+<span class="keyword">body</span>
+    width calc( <span class="string">&quot;100% - 80px&quot;</span>, <span class="number">90</span>% )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">body</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="function">-webkit-calc(<span class="number">100</span>% - <span class="number">80</span>px)</span></span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="function">calc(<span class="number">100</span>% - <span class="number">80</span>px)</span></span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="function">-webkit-calc</span>(<span class="number">100%</span> - <span class="number">80px</span>)</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="function">calc</span>(<span class="number">100%</span> - <span class="number">80px</span>)</span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">body</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">90</span>%</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="function">-webkit-calc(<span class="number">100</span>% - <span class="number">80</span>px)</span></span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="function">calc(<span class="number">100</span>% - <span class="number">80</span>px)</span></span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">90%</span></span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="function">-webkit-calc</span>(<span class="number">100%</span> - <span class="number">80px</span>)</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="function">calc</span>(<span class="number">100%</span> - <span class="number">80px</span>)</span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="font-face"><h1 id="font-face-">font-face()</h1>
@@ -86,31 +86,31 @@
 <li><code>svg-font-name</code>: the svg font name. <em>Optional</em>. Default: use the <code>name</code> parameters.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="function">font-face( <span class="string">&quot;Roboto&quot;</span>, <span class="string">&quot;./fonts/Roboto-Regular-webfont&quot;</span>, normal )</span>
+<pre><code class="lang-stylus">font-face( <span class="string">&quot;Roboto&quot;</span>, <span class="string">&quot;./fonts/Roboto-Regular-webfont&quot;</span>, <span class="keyword">normal</span> )
 
-<span class="function">font-face( <span class="string">&quot;Roboto&quot;</span>, <span class="string">&quot;./fonts/Roboto-Italic-webfont&quot;</span>, normal, italic )</span>
+font-face( <span class="string">&quot;Roboto&quot;</span>, <span class="string">&quot;./fonts/Roboto-Italic-webfont&quot;</span>, <span class="keyword">normal</span>, italic )
 
-<span class="function">font-face( <span class="string">&quot;OpenSans&quot;</span>, <span class="string">&quot;./fonts/OpenSans&quot;</span>, formats: woff )</span>
+font-face( <span class="string">&quot;OpenSans&quot;</span>, <span class="string">&quot;./fonts/OpenSans&quot;</span>, format<span class="variable">s:</span> woff )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="at_rule">@<span class="keyword">font-face</span></span> <span class="rules">{
   <span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">&quot;Roboto&quot;</span></span></span>;
   <span class="rule"><span class="attribute">font-weight</span>:<span class="value"> normal</span></span>;
-  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url(<span class="string">&quot;./fonts/Roboto-Regular-webfont.eot&quot;</span>)</span></span></span>;
-  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url(<span class="string">&quot;./fonts/Roboto-Regular-webfont.eot?#iefix&quot;</span>)</span> <span class="function">format(<span class="string">&quot;embedded-opentype&quot;</span>)</span>, <span class="function">url(<span class="string">&quot;./fonts/Roboto-Regular-webfont.woff&quot;</span>)</span> <span class="function">format(<span class="string">&quot;woff&quot;</span>)</span>, <span class="function">url(<span class="string">&quot;./fonts/Roboto-Regular-webfont.ttf&quot;</span>)</span> <span class="function">format(<span class="string">&quot;truetype&quot;</span>)</span>, <span class="function">url(<span class="string">&quot;./fonts/Roboto-Regular-webfont.svg#Roboto&quot;</span>)</span> <span class="function">format(<span class="string">&quot;svg&quot;</span>)</span></span></span>;
+  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.eot&quot;</span>)</span></span>;
+  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.eot?#iefix&quot;</span>) <span class="function">format</span>(<span class="string">&quot;embedded-opentype&quot;</span>), <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.woff&quot;</span>) <span class="function">format</span>(<span class="string">&quot;woff&quot;</span>), <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.ttf&quot;</span>) <span class="function">format</span>(<span class="string">&quot;truetype&quot;</span>), <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.svg#Roboto&quot;</span>) <span class="function">format</span>(<span class="string">&quot;svg&quot;</span>)</span></span>;
 <span class="rule">}</span></span>
 
 <span class="at_rule">@<span class="keyword">font-face</span></span> <span class="rules">{
   <span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">&quot;Roboto&quot;</span></span></span>;
   <span class="rule"><span class="attribute">font-weight</span>:<span class="value"> normal</span></span>;
   <span class="rule"><span class="attribute">font-style</span>:<span class="value"> italic</span></span>;
-  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url(<span class="string">&quot;./fonts/Roboto-Italic-webfont.eot&quot;</span>)</span></span></span>;
-  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url(<span class="string">&quot;./fonts/Roboto-Italic-webfont.eot?#iefix&quot;</span>)</span> <span class="function">format(<span class="string">&quot;embedded-opentype&quot;</span>)</span>, <span class="function">url(<span class="string">&quot;./fonts/Roboto-Italic-webfont.woff&quot;</span>)</span> <span class="function">format(<span class="string">&quot;woff&quot;</span>)</span>, <span class="function">url(<span class="string">&quot;./fonts/Roboto-Italic-webfont.ttf&quot;</span>)</span> <span class="function">format(<span class="string">&quot;truetype&quot;</span>)</span>, <span class="function">url(<span class="string">&quot;./fonts/Roboto-Italic-webfont.svg#Roboto&quot;</span>)</span> <span class="function">format(<span class="string">&quot;svg&quot;</span>)</span></span></span>;
+  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.eot&quot;</span>)</span></span>;
+  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.eot?#iefix&quot;</span>) <span class="function">format</span>(<span class="string">&quot;embedded-opentype&quot;</span>), <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.woff&quot;</span>) <span class="function">format</span>(<span class="string">&quot;woff&quot;</span>), <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.ttf&quot;</span>) <span class="function">format</span>(<span class="string">&quot;truetype&quot;</span>), <span class="function">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.svg#Roboto&quot;</span>) <span class="function">format</span>(<span class="string">&quot;svg&quot;</span>)</span></span>;
 <span class="rule">}</span></span>
 
 <span class="at_rule">@<span class="keyword">font-face</span></span> <span class="rules">{
   <span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">&quot;OpenSans&quot;</span></span></span>;
-  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url(<span class="string">&quot;./fonts/OpenSans.woff&quot;</span>)</span> <span class="function">format(<span class="string">&quot;woff&quot;</span>)</span></span></span>;
+  <span class="rule"><span class="attribute">src</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;./fonts/OpenSans.woff&quot;</span>) <span class="function">format</span>(<span class="string">&quot;woff&quot;</span>)</span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="placeholder"><h1 id="placeholder-">placeholder()</h1>
@@ -147,27 +147,27 @@
 <p><code>linear-gradient( start, stops... )</code></p>
 <p>The implementation of <code>linear-gradient</code> follows <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient">the CSS3 specs</a>.</p>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus">div
-  background<span class="attribute">-image</span>: linear<span class="attribute">-gradient</span>( <span class="subst">-</span><span class="number">45</span>deg, yellow, green )
+<pre><code class="lang-stylus"><span class="operator">div</span>
+  background-image: linear-gradient( -<span class="number">45</span>deg, yellow, green )
 
-div
-  background<span class="attribute">-image</span>: linear<span class="attribute">-gradient</span>( <span class="keyword">to</span> top right, red, white <span class="number">30</span><span class="subst">%</span>, blue )
+<span class="operator">div</span>
+  background-image: linear-gradient( <span class="built_in">to</span> top <span class="constant">right</span>, red, white <span class="number">30</span>%, blue )
 </code></pre>
 <h3 id="result">Result</h3>
-<pre><code class="lang-css">div {
-  background<span class="attribute">-image</span>: <span class="attribute">-webkit</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(<span class="number">135</span>deg,<span class="variable">#ff0</span>,<span class="variable">#008000</span>);
-  background<span class="attribute">-image</span>: <span class="attribute">-moz</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(<span class="number">135</span>deg,<span class="variable">#ff0</span>,<span class="variable">#008000</span>);
-  background<span class="attribute">-image</span>: <span class="attribute">-ms</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(<span class="number">135</span>deg,<span class="variable">#ff0</span>,<span class="variable">#008000</span>);
-  background<span class="attribute">-image</span>: <span class="attribute">-o</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(<span class="number">135</span>deg,<span class="variable">#ff0</span>,<span class="variable">#008000</span>);
-  background<span class="attribute">-image</span>: linear<span class="attribute">-gradient</span>(<span class="subst">-</span><span class="number">45</span>deg,<span class="variable">#ff0</span>,<span class="variable">#008000</span>);
-}
-div {
-  background<span class="attribute">-image</span>: <span class="attribute">-webkit</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(bottom left,<span class="variable">#f00</span>,<span class="variable">#fff</span> <span class="number">30</span><span class="subst">%</span>,<span class="variable">#00</span>f);
-  background<span class="attribute">-image</span>: <span class="attribute">-moz</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(bottom left,<span class="variable">#f00</span>,<span class="variable">#fff</span> <span class="number">30</span><span class="subst">%</span>,<span class="variable">#00</span>f);
-  background<span class="attribute">-image</span>: <span class="attribute">-ms</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(bottom left,<span class="variable">#f00</span>,<span class="variable">#fff</span> <span class="number">30</span><span class="subst">%</span>,<span class="variable">#00</span>f);
-  background<span class="attribute">-image</span>: <span class="attribute">-o</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(bottom left,<span class="variable">#f00</span>,<span class="variable">#fff</span> <span class="number">30</span><span class="subst">%</span>,<span class="variable">#00</span>f);
-  background<span class="attribute">-image</span>: linear<span class="attribute">-gradient</span>(<span class="keyword">to</span> top right,<span class="variable">#f00</span>,<span class="variable">#fff</span> <span class="number">30</span><span class="subst">%</span>,<span class="variable">#00</span>f);
-}
+<pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-webkit-linear-gradient</span>(<span class="number">135deg</span>,<span class="hexcolor">#ff0</span>,<span class="hexcolor">#008000</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-moz-linear-gradient</span>(<span class="number">135deg</span>,<span class="hexcolor">#ff0</span>,<span class="hexcolor">#008000</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-ms-linear-gradient</span>(<span class="number">135deg</span>,<span class="hexcolor">#ff0</span>,<span class="hexcolor">#008000</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-o-linear-gradient</span>(<span class="number">135deg</span>,<span class="hexcolor">#ff0</span>,<span class="hexcolor">#008000</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">linear-gradient</span>(-<span class="number">45deg</span>,<span class="hexcolor">#ff0</span>,<span class="hexcolor">#008000</span>)</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-webkit-linear-gradient</span>(bottom left,<span class="hexcolor">#f00</span>,<span class="hexcolor">#fff</span> <span class="number">30%</span>,<span class="hexcolor">#00f</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-moz-linear-gradient</span>(bottom left,<span class="hexcolor">#f00</span>,<span class="hexcolor">#fff</span> <span class="number">30%</span>,<span class="hexcolor">#00f</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-ms-linear-gradient</span>(bottom left,<span class="hexcolor">#f00</span>,<span class="hexcolor">#fff</span> <span class="number">30%</span>,<span class="hexcolor">#00f</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-o-linear-gradient</span>(bottom left,<span class="hexcolor">#f00</span>,<span class="hexcolor">#fff</span> <span class="number">30%</span>,<span class="hexcolor">#00f</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">linear-gradient</span>(to top right,<span class="hexcolor">#f00</span>,<span class="hexcolor">#fff</span> <span class="number">30%</span>,<span class="hexcolor">#00f</span>)</span></span>;
+<span class="rule">}</span></span>
 </code></pre>
 </article><article id="radial-gradient"><h1 id="radial-gradient-">radial-gradient()</h1>
 <p>Display a <code>radial-gradient</code>.</p>
@@ -185,20 +185,20 @@ div
     background-<span class="keyword">image</span>: <span class="keyword">radial</span>-gradient( ellipse at center, yellow <span class="number">0</span><span class="variable">%,</span> green <span class="number">100</span>% )
 </code></pre>
 <h3 id="result">Result</h3>
-<pre><code class="lang-css">div {
-  background<span class="attribute">-image</span>: <span class="attribute">-webkit</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(<span class="number">50</span><span class="subst">%</span> <span class="number">50</span><span class="subst">%</span>,<span class="variable">#000</span>,<span class="variable">#fff</span>);
-  background<span class="attribute">-image</span>: <span class="attribute">-moz</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(<span class="number">50</span><span class="subst">%</span> <span class="number">50</span><span class="subst">%</span>,<span class="variable">#000</span>,<span class="variable">#fff</span>);
-  background<span class="attribute">-image</span>: <span class="attribute">-ms</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(<span class="number">50</span><span class="subst">%</span> <span class="number">50</span><span class="subst">%</span>,<span class="variable">#000</span>,<span class="variable">#fff</span>);
-  background<span class="attribute">-image</span>: <span class="attribute">-o</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(<span class="number">50</span><span class="subst">%</span> <span class="number">50</span><span class="subst">%</span>,<span class="variable">#000</span>,<span class="variable">#fff</span>);
-  background<span class="attribute">-image</span>: radial<span class="attribute">-gradient</span>(<span class="number">50</span><span class="subst">%</span> <span class="number">50</span><span class="subst">%</span>,<span class="variable">#000</span>,<span class="variable">#fff</span>);
-}
-div {
-  background<span class="attribute">-image</span>: <span class="attribute">-webkit</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(ellipse at center,<span class="variable">#ff0</span> <span class="number">0</span><span class="subst">%</span>,<span class="variable">#008000</span> <span class="number">100</span><span class="subst">%</span>);
-  background<span class="attribute">-image</span>: <span class="attribute">-moz</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(ellipse at center,<span class="variable">#ff0</span> <span class="number">0</span><span class="subst">%</span>,<span class="variable">#008000</span> <span class="number">100</span><span class="subst">%</span>);
-  background<span class="attribute">-image</span>: <span class="attribute">-ms</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(ellipse at center,<span class="variable">#ff0</span> <span class="number">0</span><span class="subst">%</span>,<span class="variable">#008000</span> <span class="number">100</span><span class="subst">%</span>);
-  background<span class="attribute">-image</span>: <span class="attribute">-o</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(ellipse at center,<span class="variable">#ff0</span> <span class="number">0</span><span class="subst">%</span>,<span class="variable">#008000</span> <span class="number">100</span><span class="subst">%</span>);
-  background<span class="attribute">-image</span>: radial<span class="attribute">-gradient</span>(ellipse at center,<span class="variable">#ff0</span> <span class="number">0</span><span class="subst">%</span>,<span class="variable">#008000</span> <span class="number">100</span><span class="subst">%</span>);
-}
+<pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-webkit-radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="hexcolor">#000</span>,<span class="hexcolor">#fff</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-moz-radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="hexcolor">#000</span>,<span class="hexcolor">#fff</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-ms-radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="hexcolor">#000</span>,<span class="hexcolor">#fff</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-o-radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="hexcolor">#000</span>,<span class="hexcolor">#fff</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="hexcolor">#000</span>,<span class="hexcolor">#fff</span>)</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-webkit-radial-gradient</span>(ellipse at center,<span class="hexcolor">#ff0</span> <span class="number">0%</span>,<span class="hexcolor">#008000</span> <span class="number">100%</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-moz-radial-gradient</span>(ellipse at center,<span class="hexcolor">#ff0</span> <span class="number">0%</span>,<span class="hexcolor">#008000</span> <span class="number">100%</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-ms-radial-gradient</span>(ellipse at center,<span class="hexcolor">#ff0</span> <span class="number">0%</span>,<span class="hexcolor">#008000</span> <span class="number">100%</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-o-radial-gradient</span>(ellipse at center,<span class="hexcolor">#ff0</span> <span class="number">0%</span>,<span class="hexcolor">#008000</span> <span class="number">100%</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">radial-gradient</span>(ellipse at center,<span class="hexcolor">#ff0</span> <span class="number">0%</span>,<span class="hexcolor">#008000</span> <span class="number">100%</span>)</span></span>;
+<span class="rule">}</span></span>
 </code></pre>
 </article><article id="repeating-linear-gradient"><h1 id="repeating-linear-gradient-">repeating-linear-gradient()</h1>
 <p>Display a <code>repeating-linear-gradient</code>.</p>
@@ -209,28 +209,28 @@ div {
 <p><code>repeating-linear-gradient( start, stops... )</code></p>
 <p>The implementation of <code>repeating-linear-gradient</code> follows <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient">the CSS3 specs</a>.</p>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus">div
-    background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>( rgb( <span class="number">26</span>, <span class="number">198</span>, <span class="number">204</span> ), rgb( <span class="number">26</span>, <span class="number">198</span>, <span class="number">204</span> ) <span class="number">7</span><span class="subst">%</span>, rgb( <span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span> ) <span class="number">10</span><span class="subst">%</span> )
+<pre><code class="lang-stylus"><span class="tag">div</span>
+    <span class="attribute">background-image</span><span class="value">: <span class="function">repeating-linear-gradient</span>( <span class="function">rgb</span>( <span class="number">26</span>, <span class="number">198</span>, <span class="number">204</span> ), <span class="function">rgb</span>( <span class="number">26</span>, <span class="number">198</span>, <span class="number">204</span> ) <span class="number">7%</span>, <span class="function">rgb</span>( <span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span> ) <span class="number">10%</span> )
 
 div
-    background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>( <span class="subst">-</span><span class="number">45</span>deg, transparent, transparent <span class="number">25</span>px, rgba( <span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span> ) <span class="number">25</span>px, rgba( <span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span> ) <span class="number">50</span>px)
+    background-image: <span class="function">repeating-linear-gradient</span>( -<span class="number">45deg</span>, transparent, transparent <span class="number">25px</span>, <span class="function">rgba</span>( <span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span> ) <span class="number">25px</span>, <span class="function">rgba</span>( <span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span> ) <span class="number">50px</span>)
 
 div
-    background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>( <span class="keyword">to</span> left top, blue, green <span class="number">40</span><span class="subst">%</span>, red );
+    background-image: <span class="function">repeating-linear-gradient</span>( to left top, blue, green <span class="number">40%</span>, red );</span>
 </code></pre>
 <h3 id="result">Result</h3>
-<pre><code class="lang-css">div {
-  background<span class="attribute">-image</span>: <span class="attribute">-webkit</span><span class="attribute">-repeating</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(<span class="variable">#1</span>ac6cc,<span class="variable">#1</span>ac6cc <span class="number">7</span><span class="subst">%</span>,<span class="variable">#646464</span> <span class="number">10</span><span class="subst">%</span>);
-  background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(<span class="variable">#1</span>ac6cc,<span class="variable">#1</span>ac6cc <span class="number">7</span><span class="subst">%</span>,<span class="variable">#646464</span> <span class="number">10</span><span class="subst">%</span>);
-}
-div {
-  background<span class="attribute">-image</span>: <span class="attribute">-webkit</span><span class="attribute">-repeating</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(<span class="number">135</span>deg,transparent,transparent <span class="number">25</span>px,<span class="variable">#fff</span> <span class="number">25</span>px,<span class="variable">#fff</span> <span class="number">50</span>px);
-  background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(<span class="subst">-</span><span class="number">45</span>deg,transparent,transparent <span class="number">25</span>px,<span class="variable">#fff</span> <span class="number">25</span>px,<span class="variable">#fff</span> <span class="number">50</span>px);
-}
-div {
-  background<span class="attribute">-image</span>: <span class="attribute">-webkit</span><span class="attribute">-repeating</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(right bottom,<span class="variable">#00</span>f,<span class="variable">#008000</span> <span class="number">40</span><span class="subst">%</span>,<span class="variable">#f00</span>);
-  background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-linear</span><span class="attribute">-gradient</span>(<span class="keyword">to</span> left top,<span class="variable">#00</span>f,<span class="variable">#008000</span> <span class="number">40</span><span class="subst">%</span>,<span class="variable">#f00</span>);
-}
+<pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-webkit-repeating-linear-gradient</span>(<span class="hexcolor">#1ac6cc</span>,<span class="hexcolor">#1ac6cc</span> <span class="number">7%</span>,<span class="hexcolor">#646464</span> <span class="number">10%</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">repeating-linear-gradient</span>(<span class="hexcolor">#1ac6cc</span>,<span class="hexcolor">#1ac6cc</span> <span class="number">7%</span>,<span class="hexcolor">#646464</span> <span class="number">10%</span>)</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-webkit-repeating-linear-gradient</span>(<span class="number">135deg</span>,transparent,transparent <span class="number">25px</span>,<span class="hexcolor">#fff</span> <span class="number">25px</span>,<span class="hexcolor">#fff</span> <span class="number">50px</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">repeating-linear-gradient</span>(-<span class="number">45deg</span>,transparent,transparent <span class="number">25px</span>,<span class="hexcolor">#fff</span> <span class="number">25px</span>,<span class="hexcolor">#fff</span> <span class="number">50px</span>)</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-webkit-repeating-linear-gradient</span>(right bottom,<span class="hexcolor">#00f</span>,<span class="hexcolor">#008000</span> <span class="number">40%</span>,<span class="hexcolor">#f00</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">repeating-linear-gradient</span>(to left top,<span class="hexcolor">#00f</span>,<span class="hexcolor">#008000</span> <span class="number">40%</span>,<span class="hexcolor">#f00</span>)</span></span>;
+<span class="rule">}</span></span>
 </code></pre>
 </article><article id="repeating-radial-gradient"><h1 id="repeating-radial-gradient-">repeating-radial-gradient()</h1>
 <p>Display a <code>repeating-radial-gradient</code>.</p>
@@ -242,44 +242,44 @@ div {
 <p>The implementation of <code>repeating-radial-gradient</code> follows <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient">the CSS3 specs</a>.</p>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus">div
-    background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>( black, black <span class="number">5</span>px, white <span class="number">5</span>px, white <span class="number">10</span>px )
+    background-<span class="keyword">image</span>: repeating-<span class="keyword">radial</span>-gradient( black, black <span class="number">5</span>px, white <span class="number">5</span>px, white <span class="number">10</span>px )
 
 div
-    background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>( ellipse farthest<span class="attribute">-corner</span>, red, black <span class="number">5</span><span class="subst">%</span>, blue <span class="number">5</span><span class="subst">%</span>, green <span class="number">10</span><span class="subst">%</span> )
+    background-<span class="keyword">image</span>: repeating-<span class="keyword">radial</span>-gradient( ellipse farthest-corner, red, black <span class="number">5</span><span class="variable">%,</span> blue <span class="number">5</span><span class="variable">%,</span> green <span class="number">10</span>% )
 </code></pre>
 <h3 id="result">Result</h3>
-<pre><code class="lang-css">div {
-  background<span class="attribute">-image</span>: <span class="attribute">-webkit</span><span class="attribute">-repeating</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(<span class="variable">#000</span>,<span class="variable">#000</span> <span class="number">5</span>px,<span class="variable">#fff</span> <span class="number">5</span>px,<span class="variable">#fff</span> <span class="number">10</span>px);
-  background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(<span class="variable">#000</span>,<span class="variable">#000</span> <span class="number">5</span>px,<span class="variable">#fff</span> <span class="number">5</span>px,<span class="variable">#fff</span> <span class="number">10</span>px);
-}
-div {
-  background<span class="attribute">-image</span>: <span class="attribute">-webkit</span><span class="attribute">-repeating</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(ellipse farthest<span class="attribute">-corner</span>,<span class="variable">#f00</span>,<span class="variable">#000</span> <span class="number">5</span><span class="subst">%</span>,<span class="variable">#00</span>f <span class="number">5</span><span class="subst">%</span>,<span class="variable">#008000</span> <span class="number">10</span><span class="subst">%</span>);
-  background<span class="attribute">-image</span>: <span class="keyword">repeating</span><span class="attribute">-radial</span><span class="attribute">-gradient</span>(ellipse farthest<span class="attribute">-corner</span>,<span class="variable">#f00</span>,<span class="variable">#000</span> <span class="number">5</span><span class="subst">%</span>,<span class="variable">#00</span>f <span class="number">5</span><span class="subst">%</span>,<span class="variable">#008000</span> <span class="number">10</span><span class="subst">%</span>);
-}
+<pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-webkit-repeating-radial-gradient</span>(<span class="hexcolor">#000</span>,<span class="hexcolor">#000</span> <span class="number">5px</span>,<span class="hexcolor">#fff</span> <span class="number">5px</span>,<span class="hexcolor">#fff</span> <span class="number">10px</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">repeating-radial-gradient</span>(<span class="hexcolor">#000</span>,<span class="hexcolor">#000</span> <span class="number">5px</span>,<span class="hexcolor">#fff</span> <span class="number">5px</span>,<span class="hexcolor">#fff</span> <span class="number">10px</span>)</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">-webkit-repeating-radial-gradient</span>(ellipse farthest-corner,<span class="hexcolor">#f00</span>,<span class="hexcolor">#000</span> <span class="number">5%</span>,<span class="hexcolor">#00f</span> <span class="number">5%</span>,<span class="hexcolor">#008000</span> <span class="number">10%</span>)</span></span>;
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">repeating-radial-gradient</span>(ellipse farthest-corner,<span class="hexcolor">#f00</span>,<span class="hexcolor">#000</span> <span class="number">5%</span>,<span class="hexcolor">#00f</span> <span class="number">5%</span>,<span class="hexcolor">#008000</span> <span class="number">10%</span>)</span></span>;
+<span class="rule">}</span></span>
 </code></pre>
 </article><article id="vendors"><h1 id="vendors-prefixes">Vendors Prefixes</h1>
 <p><strong>kouto swiss</strong> comes with automatic vendor prefixer for the following properties.<br>You can define the behavior of the prefixer by changing the value of the global variable <code>ks-vendors-prefixes</code>.</p>
 <h2 id="recommended-prefixes-by-default-">Recommended prefixes (by default)</h2>
 <p>By default, <strong>kouto swiss</strong> use the data from <a href="http://caniuse.com">caniuse</a> website to select the prefixes to use.</p>
 <p>You can select which version of browsers you want to support by modifying the following global variables.</p>
-<pre><code>ks<span class="attribute">-support</span><span class="attribute">-ie</span> <span class="subst">=</span> <span class="number">8</span>
-ks<span class="attribute">-support</span><span class="attribute">-firefox</span> <span class="subst">=</span> <span class="number">25</span>
-ks<span class="attribute">-support</span><span class="attribute">-chrome</span> <span class="subst">=</span> <span class="number">20</span>
-ks<span class="attribute">-support</span><span class="attribute">-safari</span> <span class="subst">=</span> <span class="number">5</span>
-ks<span class="attribute">-support</span><span class="attribute">-opera</span> <span class="subst">=</span> <span class="number">15</span>
-ks<span class="attribute">-support</span><span class="attribute">-ios</span><span class="attribute">-safari</span> <span class="subst">=</span> <span class="number">5</span>
-ks<span class="attribute">-support</span><span class="attribute">-opera</span><span class="attribute">-mini</span> <span class="subst">=</span> <span class="literal">false</span>
-ks<span class="attribute">-support</span><span class="attribute">-android</span><span class="attribute">-browser</span> <span class="subst">=</span> <span class="literal">false</span>
-ks<span class="attribute">-support</span><span class="attribute">-blackberry</span><span class="attribute">-browser</span> <span class="subst">=</span> <span class="literal">false</span>
-ks<span class="attribute">-support</span><span class="attribute">-opera</span><span class="attribute">-mobile</span> <span class="subst">=</span> <span class="literal">false</span>
-ks<span class="attribute">-support</span><span class="attribute">-android</span><span class="attribute">-chrome</span> <span class="subst">=</span> <span class="literal">false</span>
-ks<span class="attribute">-support</span><span class="attribute">-android</span><span class="attribute">-firefox</span> <span class="subst">=</span> <span class="literal">false</span>
-ks<span class="attribute">-support</span><span class="attribute">-ie</span><span class="attribute">-mobile</span> <span class="subst">=</span> <span class="literal">false</span>
+<pre><code><span class="variable">ks-support-ie =</span> <span class="number">8</span>
+<span class="variable">ks-support-firefox =</span> <span class="number">25</span>
+<span class="variable">ks-support-chrome =</span> <span class="number">20</span>
+<span class="variable">ks-support-safari =</span> <span class="number">5</span>
+<span class="variable">ks-support-opera =</span> <span class="number">15</span>
+<span class="variable">ks-support-ios-safari =</span> <span class="number">5</span>
+<span class="variable">ks-support-opera-mini =</span> <span class="constant">false</span>
+<span class="variable">ks-support-android-browser =</span> <span class="constant">false</span>
+<span class="variable">ks-support-blackberry-browser =</span> <span class="constant">false</span>
+<span class="variable">ks-support-opera-mobile =</span> <span class="constant">false</span>
+<span class="variable">ks-support-android-chrome =</span> <span class="constant">false</span>
+<span class="variable">ks-support-android-firefox =</span> <span class="constant">false</span>
+<span class="variable">ks-support-ie-mobile =</span> <span class="constant">false</span>
 </code></pre><p>You can set a number, which will act as &quot;<em>greater or equal</em>&quot; support, a <a href="https://github.com/isaacs/node-semver#ranges">semver range</a> string, or the <code>false</code> value, to be ignored.</p>
 <p>If you want to ignore the <a href="http://caniuse.com">caniuse</a> recommandations, add the features you want to ignore to the <code>ks-support-ignore-features</code> global variable.</p>
 <p>For the properties not registered in <a href="http://caniuse.com">caniuse</a>, the implementation is based on <a href="http://peter.sh/experiments/vendor-prefixed-css-property-overview/">the list of Peter Beverloo</a>.</p>
 <p>You can set the following global variable to use the recommended prefixes for the variable.</p>
-<pre><code>ks<span class="attribute">-vendors</span><span class="attribute">-prefixes</span> <span class="subst">=</span> recommended
+<pre><code><span class="attribute">ks-vendors-prefixes </span>=<span class="string"> recommended</span>
 </code></pre><p>The following properties are not registered in <a href="http://caniuse.com">caniuse</a>.</p>
 <ul>
 <li><p><strong>appearance:</strong> <code>-webkit</code> <code>-moz</code></p>
@@ -292,7 +292,7 @@ ks<span class="attribute">-support</span><span class="attribute">-ie</span><span
 <h2 id="specific-prefixes">Specific prefixes</h2>
 <p>If you want specific prefixes, you can force them by setting the global variable <code>ks-vendors-prefixes</code> with the prefixes you want.  </p>
 <h2 id="no-vendor-prefixes">No vendor prefixes</h2>
-<pre><code>ks<span class="attribute">-vendors</span><span class="attribute">-prefixes</span> <span class="subst">=</span> <span class="literal">false</span>
+<pre><code><span class="variable">ks-vendors-prefixes =</span> <span class="constant">false</span>
 </code></pre><p>If you don&apos;t want to let <strong>kouto swiss</strong> to add vendor prefixes, and do the job yourself with such plugins like <code>autoprefixer</code>, simply set <code>ks-vendors-prefixes</code> to false.</p>
 <h2 id="the-vendor-mixin">The <code>vendor</code> mixin</h2>
 <p>You can also define your own vendors mixins with the <strong>kouto swiss</strong> built-in vendor mixin.</p>
@@ -307,42 +307,42 @@ ks<span class="attribute">-support</span><span class="attribute">-ie</span><span
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus">
 button
-    align<span class="attribute">-content</span> stretch
+    align-content stretch
 
-ks<span class="attribute">-support</span><span class="attribute">-ie</span> <span class="subst">=</span> <span class="number">11</span>
-
-button
-    align<span class="attribute">-content</span> stretch
-
-ks<span class="attribute">-vendors</span><span class="attribute">-prefixes</span> <span class="subst">=</span> o ms webkit moz
+ks-support-ie = <span class="number">11</span>
 
 button
-    clip<span class="attribute">-path</span> <span class="literal">none</span>
+    align-content stretch
 
-ks<span class="attribute">-vendors</span><span class="attribute">-prefixes</span> <span class="subst">=</span> recommended
-
-button
-    clip<span class="attribute">-path</span> <span class="literal">none</span>
-
-ks<span class="attribute">-vendors</span><span class="attribute">-prefixes</span> <span class="subst">=</span> <span class="literal">false</span>
+ks-vendors-prefixes = o ms webkit moz
 
 button
-    clip<span class="attribute">-path</span> <span class="literal">none</span>
+    clip-path <span class="literal">none</span>
+
+ks-vendors-prefixes = recommended
 
 button
-    vendor( <span class="string">&quot;columns&quot;</span>, auto auto, feature: <span class="string">&quot;multicolumn&quot;</span> )
+    clip-path <span class="literal">none</span>
+
+ks-vendors-prefixes = <span class="literal">false</span>
 
 button
-    vendor( <span class="string">&quot;columns&quot;</span>, auto auto, prefixes: webkit moz ms o )
+    clip-path <span class="literal">none</span>
 
 button
-    vendor( <span class="string">&quot;columns&quot;</span>, auto auto, prefixes: webkit moz ms o, official: <span class="literal">false</span> )
-
-ks<span class="attribute">-support</span><span class="attribute">-ignore</span><span class="attribute">-features</span> <span class="subst">=</span> <span class="string">&quot;css3-boxsizing&quot;</span> <span class="string">&quot;css-animation&quot;</span>
+    vendor( <span class="string">&quot;columns&quot;</span>, <span class="literal">auto</span> <span class="literal">auto</span>, feature: <span class="string">&quot;multicolumn&quot;</span> )
 
 button
-    animation <span class="literal">none</span> <span class="number">0</span>s ease <span class="number">0</span>s <span class="number">1</span> normal <span class="literal">none</span>
-    box<span class="attribute">-sizing</span> content<span class="attribute">-box</span>
+    vendor( <span class="string">&quot;columns&quot;</span>, <span class="literal">auto</span> <span class="literal">auto</span>, prefixes: webkit moz ms o )
+
+button
+    vendor( <span class="string">&quot;columns&quot;</span>, <span class="literal">auto</span> <span class="literal">auto</span>, prefixes: webkit moz ms o, official: <span class="literal">false</span> )
+
+ks-support-ignore-features = <span class="string">&quot;css3-boxsizing&quot;</span> <span class="string">&quot;css-animation&quot;</span>
+
+button
+    animation <span class="literal">none</span> <span class="number">0</span>s ease <span class="number">0</span>s <span class="number">1</span> <span class="literal">normal</span> <span class="literal">none</span>
+    box-sizing content-box
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">button</span> <span class="rules">{
@@ -387,7 +387,7 @@ button
   <span class="rule"><span class="attribute">-o-columns</span>:<span class="value"> auto auto</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">button</span> <span class="rules">{
-  <span class="rule"><span class="attribute">animation</span>:<span class="value"> none <span class="number">0</span>s ease <span class="number">0</span>s <span class="number">1</span> normal none</span></span>;
+  <span class="rule"><span class="attribute">animation</span>:<span class="value"> none <span class="number">0s</span> ease <span class="number">0s</span> <span class="number">1</span> normal none</span></span>;
   <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> content-box</span></span>;
 <span class="rule">}</span></span>
 </code></pre>
@@ -400,19 +400,19 @@ button
 <li><code>base</code>: base for conversion. <em>Optional</em> Defaults to <code>16</code>.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="tag">div</span>
-    <span class="attribute">font-size</span> <span class="function">em( <span class="number">12</span>px, <span class="number">24</span> )</span>
+<pre><code class="lang-stylus"><span class="keyword">div</span>
+    font-<span class="keyword">size</span> em( <span class="number">12</span>px, <span class="number">24</span> )
 
-<span class="tag">div</span>
-    <span class="attribute">font-size</span> <span class="function">em( <span class="number">16</span> )</span>
+<span class="keyword">div</span>
+    font-<span class="keyword">size</span> em( <span class="number">16</span> )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.5</span>em</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.5em</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1</span>em</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1em</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="rem"><h1 id="rem-">rem()</h1>
@@ -433,11 +433,11 @@ ks-<span class="keyword">rem</span>-base = <span class="number">20</span>px
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.75</span>rem</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.75rem</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.8</span>rem</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.8rem</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="percent"><h1 id="percent-">percent()</h1>
@@ -453,25 +453,25 @@ ks-<span class="keyword">rem</span>-base = <span class="number">20</span>px
 </ul>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus"><span class="tag">div</span>
-    <span class="attribute">width</span> <span class="function">percent( <span class="number">50</span>px, <span class="number">200</span>px )</span>
+    <span class="attribute">width</span> <span class="function">percent</span>( 50px, 200px )
 
 <span class="tag">div</span>
-    <span class="attribute">width</span> <span class="function">percent( <span class="number">15</span>, <span class="number">200</span> )</span>
+    <span class="attribute">width</span> <span class="function">percent</span>( 15, 200 )
 
 <span class="tag">div</span>
-    <span class="attribute">clear</span> <span class="function">percent( <span class="number">30</span>em, <span class="number">10</span>px )</span>
+    <span class="attribute">clear</span> <span class="function">percent</span>( 30em, 10px )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">25</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">25%</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">7.5</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">7.5%</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">300</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">300%</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="modular-scale"><h1 id="modular-scale-">modular-scale()</h1>
@@ -505,33 +505,33 @@ ks-<span class="keyword">rem</span>-base = <span class="number">20</span>px
 <li><code>ks-double-octave</code>: 4 </li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus">div
-    font<span class="attribute">-size</span> modular<span class="attribute">-scale</span>( <span class="number">16</span>px, <span class="number">1</span>, <span class="number">1.5</span> )
+<pre><code class="lang-stylus"><span class="keyword">div</span>
+    font-<span class="keyword">size</span> modular-scale( <span class="number">16</span>px, <span class="number">1</span>, <span class="number">1.5</span> )
 
-div
-    font<span class="attribute">-size</span> modular<span class="attribute">-scale</span>( <span class="number">16</span>px, <span class="number">2</span>, <span class="number">1.618</span> )
+<span class="keyword">div</span>
+    font-<span class="keyword">size</span> modular-scale( <span class="number">16</span>px, <span class="number">2</span>, <span class="number">1.618</span> )
 
-div
-    font<span class="attribute">-size</span> modular<span class="attribute">-scale</span>( <span class="number">16</span>px, <span class="subst">-</span><span class="number">2</span>, ks<span class="attribute">-octave</span> )
+<span class="keyword">div</span>
+    font-<span class="keyword">size</span> modular-scale( <span class="number">16</span>px, -<span class="number">2</span>, ks-octave )
 
-div
-    font<span class="attribute">-size</span> modular<span class="attribute">-scale</span>( <span class="number">1</span>em, <span class="number">2</span>, <span class="number">1.5</span> )
+<span class="keyword">div</span>
+    font-<span class="keyword">size</span> modular-scale( <span class="number">1</span>em, <span class="number">2</span>, <span class="number">1.5</span> )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">24</span>px</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">24px</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">41.886784</span>px</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">41.886784px</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">4</span>px</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">4px</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2.25</span>em</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2.25em</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="golden-ratio"><h1 id="golden-ratio-">golden-ratio()</h1>
@@ -543,19 +543,19 @@ div
 <li><code>step</code>: step to scale.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="tag">div</span>
-    <span class="attribute">font-size</span> <span class="function">golden-ratio( <span class="number">16</span>px, <span class="number">1</span> )</span>
+<pre><code class="lang-stylus"><span class="keyword">div</span>
+    font-<span class="keyword">size</span> golden-ratio( <span class="number">16</span>px, <span class="number">1</span> )
 
-<span class="tag">div</span>
-    <span class="attribute">font-size</span> <span class="function">golden-ratio( <span class="number">1</span>em, <span class="number">2</span> )</span>
+<span class="keyword">div</span>
+    font-<span class="keyword">size</span> golden-ratio( <span class="number">1</span>em, <span class="number">2</span> )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">25.888</span>px</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">25.888px</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2.617924</span>em</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2.617924em</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="color-fallback"><h1 id="-color-fallback-color-"><code>color-fallback( color )</code></h1>
@@ -570,10 +570,10 @@ div
 </ul>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus"><span class="class">.no-alpha</span>
-    <span class="attribute">color</span> <span class="function">color-fallback( red )</span>
+    <span class="attribute">color</span> <span class="function">color-fallback</span>( red )
 
 <span class="class">.alpha</span>
-    <span class="attribute">color</span> <span class="function">color-fallback( <span class="function">rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )</span> )</span>
+    <span class="attribute">color</span> <span class="function">color-fallback</span>( <span class="function">rgba</span>( 255, 0, 0, <span class="class">.5</span> ) )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="class">.no-alpha</span> <span class="rules">{
@@ -582,45 +582,45 @@ div
 
 <span class="class">.alpha</span> <span class="rules">{
   <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.5</span>)</span></span></span>;
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.5</span>)</span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 <h2 id="implicit-color-fallback">Implicit color fallback</h2>
 <p>The <code>implicit color fallback</code> mecanism allows you to use the <code>color-fallback</code> function without calling it, by declaring an <code>ks-color-fallback</code> variable to <code>true</code>.</p>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="built_in">.</span>foo
-    color rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
+<pre><code class="lang-stylus">.foo
+    <span class="keyword">color</span> rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
 
-ks<span class="attribute">-color</span><span class="attribute">-fallback</span> <span class="subst">=</span> <span class="literal">true</span>
+ks-<span class="keyword">color</span>-fallback = true
 
-<span class="built_in">.</span>bar
-    color rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
+.bar
+    <span class="keyword">color</span> rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
 
-<span class="built_in">.</span>bar
-    background rgba( <span class="number">202</span>, <span class="number">43</span>, <span class="number">120</span>, <span class="number">.5</span> ) url( test<span class="built_in">.</span>png ) top left repeat
+.bar
+    background rgba( <span class="number">202</span>, <span class="number">43</span>, <span class="number">120</span>, <span class="number">.5</span> ) url( test.png ) top left repeat
 
-ks<span class="attribute">-color</span><span class="attribute">-fallback</span> <span class="subst">=</span> <span class="literal">false</span>
+ks-<span class="keyword">color</span>-fallback = false
 
-<span class="built_in">.</span>foo
-    color rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
+.foo
+    <span class="keyword">color</span> rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="class">.foo</span> <span class="rules">{
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )</span></span></span>;
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba</span>( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )</span></span>;
 <span class="rule">}</span></span>
 
 <span class="class">.bar</span> <span class="rules">{
   <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )</span></span></span>;
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba</span>( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )</span></span>;
 <span class="rule">}</span></span>
 
 <span class="class">.foo</span> <span class="rules">{
-  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ca2b78</span> <span class="function">url(<span class="string">&quot;test.png&quot;</span>)</span> top left repeat</span></span>;
-  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">rgba(<span class="number">202</span>,<span class="number">43</span>,<span class="number">120</span>,<span class="number">0.5</span>)</span> <span class="function">url(<span class="string">&quot;test.png&quot;</span>)</span> top left repeat</span></span>;
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ca2b78</span> <span class="function">url</span>(<span class="string">&quot;test.png&quot;</span>) top left repeat</span></span>;
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">rgba</span>(<span class="number">202</span>,<span class="number">43</span>,<span class="number">120</span>,<span class="number">0.5</span>) <span class="function">url</span>(<span class="string">&quot;test.png&quot;</span>) top left repeat</span></span>;
 <span class="rule">}</span></span>
 
 <span class="class">.foo</span> <span class="rules">{
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )</span></span></span>;
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba</span>( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )</span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="luminosity"><h1 id="-luminosity-color-"><code>luminosity( color )</code></h1>
@@ -631,9 +631,9 @@ ks<span class="attribute">-color</span><span class="attribute">-fallback</span> 
 <li><code>color</code>: color to analyse.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus">.luminosity
-    background <span class="preprocessor">#ff0</span>
-    <span class="keyword">color</span> luminosity( <span class="preprocessor">#ff0 ) &gt; 0.5 ? black : white</span>
+<pre><code class="lang-stylus"><span class="input"><span class="prompt">.luminosity
+    background #ff0
+    color luminosity( #ff0 ) &gt;</span> <span class="number">0</span>.<span class="number">5</span> ? black <span class="symbol">:</span> white</span>
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="class">.luminosity</span> <span class="rules">{
@@ -848,49 +848,49 @@ ks<span class="attribute">-color</span><span class="attribute">-fallback</span> 
 <p>The position mixins gives you four convenient shortcuts for <code>position</code> property.<br>Simply call the value of position as property, and gives the values of <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code> as value.  </p>
 <p><strong>Note:</strong> The values are parsed in the same way as in <code>margin</code> or <code>padding</code> method : 1 value affect all, 2 values are for <code>top</code>/<code>bottom</code> and <code>left</code>/<code>right</code>, 3 values are for <code>top</code>, <code>left</code>/<code>right</code> and <code>bottom</code>, and 4 values are for <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code>.</p>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="operator">div</span>
-    static <span class="number">10</span>px
+<pre><code class="lang-stylus"><span class="keyword">div</span>
+    <span class="keyword">static</span> <span class="number">10</span>px
 
-<span class="operator">div</span>
-    <span class="built_in">relative</span> <span class="number">10</span>px <span class="number">20</span>px
+<span class="keyword">div</span>
+    relative <span class="number">10</span>px <span class="number">20</span>px
 
-<span class="operator">div</span>
+<span class="keyword">div</span>
     absolute <span class="number">10</span>px <span class="number">20</span>px <span class="number">30</span>px
 
-<span class="operator">div</span>
+<span class="keyword">div</span>
     fixed <span class="number">10</span>px <span class="number">20</span>px <span class="number">30</span>px <span class="number">40</span>px
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">position</span>:<span class="value"> static</span></span>;
-  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">10</span>px</span></span>;
+  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">10px</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;
-  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">20</span>px</span></span>;
-  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">20</span>px</span></span>;
+  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">20px</span></span></span>;
+  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">20px</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;
-  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">20</span>px</span></span>;
-  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">30</span>px</span></span>;
-  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">20</span>px</span></span>;
+  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">20px</span></span></span>;
+  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">30px</span></span></span>;
+  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">20px</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;
-  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">20</span>px</span></span>;
-  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">30</span>px</span></span>;
-  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">40</span>px</span></span>;
+  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">20px</span></span></span>;
+  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">30px</span></span></span>;
+  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">40px</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="size"><h1 id="size-mixins">size mixins</h1>
@@ -898,36 +898,36 @@ ks<span class="attribute">-color</span><span class="attribute">-fallback</span> 
 <p><strong>Note:</strong> If only one value is given, the <code>width</code> and <code>height</code> will have the same values.</p>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus"><span class="keyword">div</span>
-    size <span class="number">10</span>px
+    <span class="keyword">size</span> <span class="number">10</span>px
 
 <span class="keyword">div</span>
-    size <span class="number">10</span>px <span class="number">20</span>px
+    <span class="keyword">size</span> <span class="number">10</span>px <span class="number">20</span>px
 
 <span class="keyword">div</span>
-    size <span class="number">10</span>px <span class="literal">false</span>
+    <span class="keyword">size</span> <span class="number">10</span>px <span class="keyword">false</span>
 
 <span class="keyword">div</span>
-    size <span class="literal">false</span> <span class="number">20</span>px
+    <span class="keyword">size</span> <span class="keyword">false</span> <span class="number">20</span>px
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">10</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">10px</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">20</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">20px</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">10</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">10px</span></span></span>;
   <span class="rule"><span class="attribute">height</span>:<span class="value"> auto</span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">width</span>:<span class="value"> auto</span></span>;
-  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">20</span>px</span></span>;
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">20px</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="font-stack"><h1 id="-font-stack-"><code>font-stack()</code></h1>
@@ -988,14 +988,14 @@ ks<span class="attribute">-color</span><span class="attribute">-fallback</span> 
 <li><code>name</code>: name of the stack. <strong>Must be quoted</strong>.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="tag">body</span>
-    <span class="attribute">font-family</span> <span class="function">font-stack( <span class="string">&quot;Arial&quot;</span> )</span>
+<pre><code class="lang-stylus"><span class="title">body</span>
+    font-<span class="keyword">family</span> font-stack( <span class="string">&quot;Arial&quot;</span> )
 
-<span class="tag">body</span>
-    <span class="attribute">font-family</span> <span class="function">font-stack( <span class="string">&quot;Helvetica&quot;</span> )</span>
+<span class="title">body</span>
+    font-<span class="keyword">family</span> font-stack( <span class="string">&quot;Helvetica&quot;</span> )
 
-<span class="tag">body</span>
-    <span class="attribute">font-family</span> <span class="function">font-stack( <span class="string">&quot;Lucida Console&quot;</span> )</span>
+<span class="title">body</span>
+    font-<span class="keyword">family</span> font-stack( <span class="string">&quot;Lucida Console&quot;</span> )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">body</span> <span class="rules">{
@@ -1017,19 +1017,19 @@ ks<span class="attribute">-color</span><span class="attribute">-fallback</span> 
 </blockquote>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus"><span class="tag">h1</span>
-    <span class="attribute">background</span> <span class="function">url( logo.png )</span> <span class="attribute">top</span> <span class="attribute">left</span> <span class="value">no-repeat</span>
-    <span class="function">hide-text()</span>
+    <span class="attribute">background</span> <span class="function">url</span>( logo<span class="class">.png</span> ) <span class="attribute">top</span> <span class="attribute">left</span> <span class="value">no-repeat</span>
+    <span class="function">hide-text</span>()
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">h1</span> <span class="rules">{
-  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url(<span class="string">&quot;logo.png&quot;</span>)</span> top left no-repeat</span></span>;
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;logo.png&quot;</span>) top left no-repeat</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">h1</span><span class="pseudo">:before</span> <span class="rules">{
   <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="string">&quot;&quot;</span></span></span>;
   <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
   <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">0</span></span></span>;
-  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100</span>%</span></span>;
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="easing"><h1 id="easing-">easing()</h1>
@@ -1067,48 +1067,62 @@ ks<span class="attribute">-color</span><span class="attribute">-fallback</span> 
 <li><code>name</code>: name of the preset. <strong>Must be quoted</strong>.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="tag">div</span>
-    <span class="attribute">transition</span> all <span class="class">.25s</span> <span class="function">easing( <span class="string">&quot;in-quad&quot;</span> )</span>
+<pre><code class="lang-stylus">div
+    transition <span class="literal">all</span> .<span class="number">25</span>s easing( <span class="string">&quot;in-quad&quot;</span> )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> all <span class="number">0.25</span>s <span class="function">cubic-bezier(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>)</span></span></span>;
-  <span class="rule"><span class="attribute">-o-transition</span>:<span class="value"> all <span class="number">0.25</span>s <span class="function">cubic-bezier(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>)</span></span></span>;
-  <span class="rule"><span class="attribute">transition</span>:<span class="value"> all <span class="number">0.25</span>s <span class="function">cubic-bezier(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>)</span></span></span>;
+  <span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> all <span class="number">0.25s</span> <span class="function">cubic-bezier</span>(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>)</span></span>;
+  <span class="rule"><span class="attribute">-o-transition</span>:<span class="value"> all <span class="number">0.25s</span> <span class="function">cubic-bezier</span>(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>)</span></span>;
+  <span class="rule"><span class="attribute">transition</span>:<span class="value"> all <span class="number">0.25s</span> <span class="function">cubic-bezier</span>(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>)</span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="media-query"><h1 id="media-query-">media-query()</h1>
-<p>Create the query part of a media query, which you can store in a variable, to use when you make a media block.  </p>
+<p>Create the query part of a media query, which you can store in a variable, to use when you make a media block.</p>
+<p>You can disable the media-queries by modifying the global <code>ks-support-media-queries</code> variable, which is by default valued to <code>true</code>.<br>It&apos;s useful for legacy stylesheet for old IE versions.</p>
+<blockquote>
+<p><strong>Warning:</strong> since version <code>0.9</code>, the media-query() mixin has changed: it&apos;s now a <em>block</em> mixin.</p>
+</blockquote>
 <h3 id="signature">Signature</h3>
-<p><code>media-query( media [, conditions... ] )</code></p>
+<p><code>+media-query( media [, conditions... ] )</code></p>
 <ul>
 <li><code>media</code>: the media of the query</li>
 <li><code>conditions</code>: multiple pairs of conditions for the query. <em>Optional</em>.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus">query<span class="attribute">-one</span> <span class="subst">=</span> media<span class="attribute">-query</span>( <span class="literal">all</span>, <span class="keyword">min</span><span class="attribute">-width</span> <span class="number">640</span>px )
-query<span class="attribute">-two</span> <span class="subst">=</span> media<span class="attribute">-query</span>( only screen, <span class="keyword">min</span><span class="attribute">-width</span> <span class="number">640</span>px, <span class="keyword">min</span><span class="attribute">-height</span> <span class="number">960</span>px, orientation portrait )
-query<span class="attribute">-three</span> <span class="subst">=</span> media<span class="attribute">-query</span>( print )
-
-@media query<span class="attribute">-one</span>
+<pre><code class="lang-stylus">+media-query( <span class="keyword">all</span>, <span class="built_in">min</span>-width <span class="number">640</span>px )
     div
-        color red
+        color <span class="keyword">red</span>
 
-@media query<span class="attribute">-two</span>
++media-query( <span class="keyword">only</span> screen, <span class="built_in">min</span>-width <span class="number">640</span>px, <span class="built_in">min</span>-height <span class="number">960</span>px, orientation portrait )
     div
-        color red
+        color <span class="keyword">red</span>
 
-@media query<span class="attribute">-three</span>
++media-query( <span class="keyword">print</span> )
     div
-        color red
+        color <span class="keyword">red</span>
+
+ks-support-media-queries = false
+
++media-query( <span class="keyword">all</span>, <span class="built_in">min</span>-width <span class="number">640</span>px )
+    div
+        color <span class="keyword">red</span>
+
++media-query( <span class="keyword">only</span> screen, <span class="built_in">min</span>-width <span class="number">640</span>px, <span class="built_in">min</span>-height <span class="number">960</span>px, orientation portrait )
+    div
+        color <span class="keyword">red</span>
+
++media-query( <span class="keyword">print</span> )
+    div
+        color <span class="keyword">red</span>
 </code></pre>
 <h3 id="result">Result</h3>
-<pre><code class="lang-css"><span class="at_rule">@<span class="keyword">media</span> all and (min-width: <span class="number">640</span>px) </span>{
+<pre><code class="lang-css"><span class="at_rule">@<span class="keyword">media</span> all and (min-width: <span class="number">640px</span>) </span>{
   <span class="tag">div</span> <span class="rules">{
     <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
   <span class="rule">}</span></span>
 }
-<span class="at_rule">@<span class="keyword">media</span> only screen and (min-width: <span class="number">640</span>px) and (min-height: <span class="number">960</span>px) and (orientation: portrait) </span>{
+<span class="at_rule">@<span class="keyword">media</span> only screen and (min-width: <span class="number">640px</span>) and (min-height: <span class="number">960px</span>) and (orientation: portrait) </span>{
   <span class="tag">div</span> <span class="rules">{
     <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
   <span class="rule">}</span></span>
@@ -1118,6 +1132,15 @@ query<span class="attribute">-three</span> <span class="subst">=</span> media<sp
     <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
   <span class="rule">}</span></span>
 }
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
+<span class="rule">}</span></span>
 </code></pre>
 </article><article id="retina-image"><h1 id="retina-image-">retina-image()</h1>
 <p>Generate a media query for an image.<br>If no size is given, the mixin tries to get the sizes from the file.</p>
@@ -1133,58 +1156,57 @@ query<span class="attribute">-three</span> <span class="subst">=</span> media<sp
   retina-image( <span class="string">&quot;logo.png&quot;</span>, <span class="number">277</span>px <span class="number">292</span>px, <span class="string">&quot;-2x&quot;</span> )
 </code></pre>
 <h3 id="result">Result</h3>
-<pre><code class="lang-css">div {
-  background<span class="attribute">-image</span>: url(<span class="string">&quot;logo.png&quot;</span>);
-}
-@media only screen <span class="literal">and</span> (<span class="attribute">-webkit</span><span class="attribute">-min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1.3</span>), only screen <span class="literal">and</span> (<span class="keyword">min</span><span class="subst">--</span>moz<span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1.3</span>), only screen <span class="literal">and</span> (<span class="attribute">-o</span><span class="attribute">-min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1.3</span>/<span class="number">1</span>), only screen <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1.3</span>), only screen <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-resolution</span>: <span class="number">125</span>dpi), only screen <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-resolution</span>: <span class="number">1.3</span>dppx) {
-  div {
-    background<span class="attribute">-image</span>: url(<span class="string">&quot;logo-2x.png&quot;</span>);
-    <span class="attribute">-webkit</span><span class="attribute">-background</span><span class="attribute">-size</span>: <span class="number">277</span>px <span class="number">292</span>px;
-    background<span class="attribute">-size</span>: <span class="number">277</span>px <span class="number">292</span>px;
-  }
+<pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;logo.png&quot;</span>)</span></span>;
+<span class="rule">}</span></span>
+<span class="at_rule">@<span class="keyword">media</span> only screen and (-webkit-min-device-pixel-ratio: <span class="number">1.3</span>), only screen and (min--moz-device-pixel-ratio: <span class="number">1.3</span>), only screen and (-o-min-device-pixel-ratio: <span class="number">1.3</span>/<span class="number">1</span>), only screen and (min-device-pixel-ratio: <span class="number">1.3</span>), only screen and (min-resolution: <span class="number">125dpi</span>), only screen and (min-resolution: <span class="number">1.3dppx</span>) </span>{
+  <span class="tag">div</span> <span class="rules">{
+    <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;logo-2x.png&quot;</span>)</span></span>;
+    <span class="rule"><span class="attribute">-webkit-background-size</span>:<span class="value"> <span class="number">277px</span> <span class="number">292px</span></span></span>;
+    <span class="rule"><span class="attribute">background-size</span>:<span class="value"> <span class="number">277px</span> <span class="number">292px</span></span></span>;
+  <span class="rule">}</span></span>
 }
 </code></pre>
 <h3 id="alias">Alias</h3>
 <p><code>hidpi-image()</code></p>
 </article><article id="retina-query"><h1 id="retina-query-">retina-query()</h1>
 <p>Create the query part of a media query for retina/hdpi screens, which you can store in a variable, to use when you make a media block.  </p>
+<blockquote>
+<p><strong>Warning:</strong> since version <code>0.9</code>, the retina-query() mixin has changed: it&apos;s now a <em>block</em> mixin.</p>
+</blockquote>
 <h3 id="signature">Signature</h3>
-<p><code>retina-query( media [, density ] )</code></p>
+<p><code>+retina-query( media [, density ] )</code></p>
 <ul>
 <li><code>media</code>: the media of the query</li>
 <li><code>density</code>: pixel density for the query. <em>Optional</em>. Default to <code>1</code>.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="keyword">query</span>-one = retina-<span class="keyword">query</span>( all, <span class="number">1.3</span> )
-<span class="keyword">query</span>-two = retina-<span class="keyword">query</span>( only screen, <span class="number">2</span> )
-<span class="keyword">query</span>-three = retina-<span class="keyword">query</span>( screen )
-
-@media <span class="keyword">query</span>-one
+<pre><code class="lang-stylus">+retina-<span class="keyword">query</span>( all, <span class="number">1.3</span> )
     <span class="keyword">div</span>
         color red
 
-@media <span class="keyword">query</span>-two
++retina-<span class="keyword">query</span>( only screen, <span class="number">2</span> )
     <span class="keyword">div</span>
         color red
 
-@media <span class="keyword">query</span>-three
++retina-<span class="keyword">query</span>( screen )
     <span class="keyword">div</span>
         color red
 </code></pre>
 <h3 id="result">Result</h3>
-<pre><code class="lang-css">@media <span class="literal">all</span> <span class="literal">and</span> (<span class="attribute">-webkit</span><span class="attribute">-min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1.3</span>), <span class="literal">all</span> <span class="literal">and</span> (<span class="keyword">min</span><span class="subst">--</span>moz<span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1.3</span>), <span class="literal">all</span> <span class="literal">and</span> (<span class="attribute">-o</span><span class="attribute">-min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1.3</span>/<span class="number">1</span>), <span class="literal">all</span> <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1.3</span>), <span class="literal">all</span> <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-resolution</span>: <span class="number">125</span>dpi), <span class="literal">all</span> <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-resolution</span>: <span class="number">1.3</span>dppx) {
+<pre><code class="lang-css">@media all <span class="literal">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>), all <span class="literal">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">1.3</span>), all <span class="literal">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>/<span class="number">1</span>), all <span class="literal">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>), all <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">125</span>dpi), all <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">1.3</span>dppx) {
   div {
-    color: <span class="variable">#f00</span>;
+    color:<span class="preprocessor"> #f00;</span>
   }
 }
-@media only screen <span class="literal">and</span> (<span class="attribute">-webkit</span><span class="attribute">-min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">2</span>), only screen <span class="literal">and</span> (<span class="keyword">min</span><span class="subst">--</span>moz<span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">2</span>), only screen <span class="literal">and</span> (<span class="attribute">-o</span><span class="attribute">-min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">2</span>/<span class="number">1</span>), only screen <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">2</span>), only screen <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-resolution</span>: <span class="number">192</span>dpi), only screen <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-resolution</span>: <span class="number">2</span>dppx) {
+@media only screen <span class="literal">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>), only screen <span class="literal">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">2</span>), only screen <span class="literal">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>/<span class="number">1</span>), only screen <span class="literal">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>), only screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">192</span>dpi), only screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">2</span>dppx) {
   div {
-    color: <span class="variable">#f00</span>;
+    color:<span class="preprocessor"> #f00;</span>
   }
 }
-@media screen <span class="literal">and</span> (<span class="attribute">-webkit</span><span class="attribute">-min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1</span>), screen <span class="literal">and</span> (<span class="keyword">min</span><span class="subst">--</span>moz<span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1</span>), screen <span class="literal">and</span> (<span class="attribute">-o</span><span class="attribute">-min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1</span>/<span class="number">1</span>), screen <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-device</span><span class="attribute">-pixel</span><span class="attribute">-ratio</span>: <span class="number">1</span>), screen <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-resolution</span>: <span class="number">96</span>dpi), screen <span class="literal">and</span> (<span class="keyword">min</span><span class="attribute">-resolution</span>: <span class="number">1</span>dppx) {
+@media screen <span class="literal">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>), screen <span class="literal">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">1</span>), screen <span class="literal">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>/<span class="number">1</span>), screen <span class="literal">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>), screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">96</span>dpi), screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">1</span>dppx) {
   div {
-    color: <span class="variable">#f00</span>;
+    color:<span class="preprocessor"> #f00;</span>
   }
 }
 </code></pre>
@@ -1201,24 +1223,24 @@ query<span class="attribute">-three</span> <span class="subst">=</span> media<sp
 <li><code>back-color</code>: background color of the triangle. <em>Optional</em>. Defaults to <code>transparent</code>.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="operator">div</span>
-    triangle( up, <span class="number">10</span>px, red )
+<pre><code class="lang-stylus">div
+    triangle( <span class="keyword">up</span>, <span class="number">10</span>px, <span class="keyword">red</span> )
 
-<span class="operator">div</span>
-    triangle( down-<span class="constant">right</span>, <span class="number">10</span>px, red )
+div
+    triangle( down-<span class="keyword">right</span>, <span class="number">10</span>px, <span class="keyword">red</span> )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">0</span></span></span>;
   <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">0</span></span></span>;
-  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">10</span>px solid transparent</span></span>;
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">10px</span> solid transparent</span></span>;
   <span class="rule"><span class="attribute">border-bottom-color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
 <span class="rule">}</span></span>
 
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">0</span></span></span>;
   <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">0</span></span></span>;
-  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">10</span>px solid <span class="hexcolor">#00f</span></span></span>;
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">10px</span> solid <span class="hexcolor">#00f</span></span></span>;
   <span class="rule"><span class="attribute">border-bottom-color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
   <span class="rule"><span class="attribute">border-right-color</span>:<span class="value"> <span class="hexcolor">#f00</span></span></span>;
 <span class="rule">}</span></span>
@@ -1248,36 +1270,36 @@ query<span class="attribute">-three</span> <span class="subst">=</span> media<sp
 </ul>
 <p>When using the <code>fluid</code> grid system, only one of the value is used to compute, proportionaly, the size of columns and gutters. If the two values are given, the <code>col-width</code> is used.</p>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="keyword">body</span>
-    gs()
+<pre><code class="lang-stylus">body
+    <span class="literal">gs</span>()
 
-<span class="keyword">body</span>
-    gs( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, <span class="number">40</span>px, <span class="number">10</span>px )
+body
+    <span class="literal">gs</span>( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, 40px, 10px )
 
-<span class="keyword">body</span>
-    gs( <span class="string">&quot;fluid&quot;</span> )
+body
+    <span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span> )
 
-<span class="keyword">body</span>
-    gs( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )
+body
+    <span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">body</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">960</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">960px</span></span></span>;
   <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">body</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">800</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">800px</span></span></span>;
   <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">body</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100%</span></span></span>;
   <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">body</span> <span class="rules">{
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100%</span></span></span>;
   <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
 <span class="rule">}</span></span>
@@ -1290,132 +1312,132 @@ query<span class="attribute">-three</span> <span class="subst">=</span> media<sp
 <li><code>size</code>: size of the column. <em>Optional</em> Default to the total of columns in the grid.</li>
 </ul>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="tag">div</span>
-    <span class="function">col()</span>
+<pre><code class="lang-stylus"><span class="keyword">div</span>
+    col()
 
-<span class="tag">div</span>
-    <span class="function">col( <span class="number">1</span> )</span>
+<span class="keyword">div</span>
+    col( <span class="number">1</span> )
 
-<span class="tag">div</span>
-    <span class="function">col( <span class="number">6</span> )</span>
+<span class="keyword">div</span>
+    col( <span class="number">6</span> )
 
-<span class="function">gs( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, <span class="number">40</span>px, <span class="number">10</span>px )</span>
+<span class="literal">gs</span>( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, 40px, 10px )
 
-<span class="tag">div</span>
-    <span class="function">col()</span>
+<span class="keyword">div</span>
+    col()
 
-<span class="tag">div</span>
-    <span class="function">col( <span class="number">1</span> )</span>
+<span class="keyword">div</span>
+    col( <span class="number">1</span> )
 
-<span class="tag">div</span>
-    <span class="function">col( <span class="number">6</span> )</span>
+<span class="keyword">div</span>
+    col( <span class="number">6</span> )
 
-<span class="function">gs( <span class="string">&quot;fluid&quot;</span> )</span>
+<span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span> )
 
-<span class="tag">div</span>
-    <span class="function">col()</span>
+<span class="keyword">div</span>
+    col()
 
-<span class="tag">div</span>
-    <span class="function">col( <span class="number">1</span> )</span>
+<span class="keyword">div</span>
+    col( <span class="number">1</span> )
 
-<span class="tag">div</span>
-    <span class="function">col( <span class="number">6</span> )</span>
+<span class="keyword">div</span>
+    col( <span class="number">6</span> )
 
-<span class="function">gs( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )</span>
+<span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )
 
-<span class="tag">div</span>
-    <span class="function">col()</span>
+<span class="keyword">div</span>
+    col()
 
-<span class="tag">div</span>
-    <span class="function">col( <span class="number">1</span> )</span>
+<span class="keyword">div</span>
+    col( <span class="number">1</span> )
 
-<span class="tag">div</span>
-    <span class="function">col( <span class="number">6</span> )</span>
+<span class="keyword">div</span>
+    col( <span class="number">6</span> )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">940</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">940px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">60</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">60px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">460</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">460px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">790</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">790px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">40</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">40px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">290</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">290px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">99.1666666666667</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">99.1666666666667%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667%</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">7.5</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">7.5%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667%</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">49.1666666666667</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">49.1666666666667%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667%</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">99</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">99%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5%</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">9</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">9%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5%</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">59</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">59%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5%</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="row"><h1 id="row-">row()</h1>
@@ -1423,44 +1445,44 @@ query<span class="attribute">-three</span> <span class="subst">=</span> media<sp
 <h3 id="signature">Signature</h3>
 <p><code>row()</code></p>
 <h3 id="usage">Usage</h3>
-<pre><code class="lang-stylus"><span class="tag">div</span>
-    <span class="function">row()</span>
+<pre><code class="lang-stylus"><span class="keyword">div</span>
+    row()
 
-<span class="function">gs( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, <span class="number">40</span>px, <span class="number">10</span>px )</span>
+<span class="literal">gs</span>( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, 40px, 10px )
 
-<span class="tag">div</span>
-    <span class="function">row()</span>
+<span class="keyword">div</span>
+    row()
 
-<span class="function">gs( <span class="string">&quot;fluid&quot;</span> )</span>
+<span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span> )
 
-<span class="tag">div</span>
-    <span class="function">row()</span>
+<span class="keyword">div</span>
+    row()
 
-<span class="function">gs( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )</span>
+<span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )
 
-<span class="tag">div</span>
-    <span class="function">row()</span>
+<span class="keyword">div</span>
+    row()
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">980</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> -<span class="number">10</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">980px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> -<span class="number">10px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">810</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> -<span class="number">5</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">810px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> -<span class="number">5px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100.83333333333331</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> -<span class="number">0.4166666666667</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100.83333333333331%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> -<span class="number">0.4166666666667%</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">101</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> -<span class="number">0.5</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">101%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> -<span class="number">0.5%</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="offset"><h1 id="offset-">offset()</h1>
@@ -1472,107 +1494,107 @@ query<span class="attribute">-three</span> <span class="subst">=</span> media<sp
 </ul>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus"><span class="tag">div</span>
-    <span class="function">col( <span class="number">1</span> )</span>
-    <span class="function">offset( <span class="number">3</span> )</span>
+    <span class="function">col</span>( 1 )
+    <span class="function">offset</span>( 3 )
 
 <span class="tag">div</span>
-    <span class="function">col( <span class="number">6</span> )</span>
-    <span class="function">offset( <span class="number">6</span> )</span>
+    <span class="function">col</span>( 6 )
+    <span class="function">offset</span>( 6 )
 
-<span class="function">gs( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, <span class="number">40</span>px, <span class="number">10</span>px )</span>
-
-<span class="tag">div</span>
-    <span class="function">col( <span class="number">1</span> )</span>
-    <span class="function">offset( <span class="number">3</span> )</span>
+<span class="function">gs</span>( &quot;<span class="value">fixed</span>&quot;, 16, 40px, 10px )
 
 <span class="tag">div</span>
-    <span class="function">col( <span class="number">6</span> )</span>
-    <span class="function">offset( <span class="number">6</span> )</span>
-
-<span class="function">gs( <span class="string">&quot;fluid&quot;</span> )</span>
+    <span class="function">col</span>( 1 )
+    <span class="function">offset</span>( 3 )
 
 <span class="tag">div</span>
-    <span class="function">col( <span class="number">1</span> )</span>
-    <span class="function">offset( <span class="number">3</span> )</span>
+    <span class="function">col</span>( 6 )
+    <span class="function">offset</span>( 6 )
+
+<span class="function">gs</span>( &quot;fluid&quot; )
 
 <span class="tag">div</span>
-    <span class="function">col( <span class="number">6</span> )</span>
-    <span class="function">offset( <span class="number">6</span> )</span>
-
-<span class="function">gs( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )</span>
+    <span class="function">col</span>( 1 )
+    <span class="function">offset</span>( 3 )
 
 <span class="tag">div</span>
-    <span class="function">col( <span class="number">1</span> )</span>
-    <span class="function">offset( <span class="number">3</span> )</span>
+    <span class="function">col</span>( 6 )
+    <span class="function">offset</span>( 6 )
+
+<span class="function">gs</span>( &quot;fluid&quot;, 10, 9% )
 
 <span class="tag">div</span>
-    <span class="function">col( <span class="number">6</span> )</span>
-    <span class="function">offset( <span class="number">6</span> )</span>
+    <span class="function">col</span>( 1 )
+    <span class="function">offset</span>( 3 )
+
+<span class="tag">div</span>
+    <span class="function">col</span>( 6 )
+    <span class="function">offset</span>( 6 )
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">60</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">250</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">60px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">250px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">460</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">490</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">460px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">490px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">40</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">155</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">40px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5px</span></span></span>;
+  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">155px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">290</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5</span>px</span></span>;
-  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">305</span>px</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">290px</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">5px</span></span></span>;
+  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">305px</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">7.5</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">25.4166666666667</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">7.5%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667%</span></span></span>;
+  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">25.4166666666667%</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">49.1666666666667</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">50.4166666666667</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">49.1666666666667%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.4166666666667%</span></span></span>;
+  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">50.4166666666667%</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">9</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">30.5</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">9%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5%</span></span></span>;
+  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">30.5%</span></span></span>;
 <span class="rule">}</span></span>
 <span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
   <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">59</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5</span>%</span></span>;
-  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">60.5</span>%</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">59%</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">0.5%</span></span></span>;
+  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">60.5%</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article></div><footer><p><strong>kouto swiss</strong> is maintained by <a href="http://krkn.be">krkn</a>.
