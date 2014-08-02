@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>docs - kouto swiss - A complete CSS framework for Stylus</title><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="styles/styles.css"><!--if lt IE 9script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
---></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#ellipsis">ellipsis</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.9.4</strong>, build on top of Stylus <strong class="stylus">v0.47.3</strong></p></section><div class="docs"><h2>reset</h2><article id="meyer-reset"><h1 id="-meyer-reset-"><code>meyer-reset()</code></h1>
+--></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li><li><a href="#normalize">normalize</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#ellipsis">ellipsis</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.9.4</strong>, build on top of Stylus <strong class="stylus">v0.47.3</strong></p></section><div class="docs"><h2>reset</h2><article id="meyer-reset"><h1 id="-meyer-reset-"><code>meyer-reset()</code></h1>
 <p>A global reset, using&apos;s the <a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer&apos;s CSS reset v2</a>.</p>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus">meyer-<span class="operator"><span class="keyword">reset</span>()</span>
@@ -35,7 +35,8 @@
 <span class="rule">}</span></span>
 </code></pre>
 </article><article id="box-sizing-reset"><h1 id="-box-sizing-reset-"><code>box-sizing-reset()</code></h1>
-<p>The <em>box-sizing reset</em>, setting the <code>box-sizing</code> property to <code>border-box</code>.<br>For more information, read the post &quot;<a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">Box-sizing: Border-box FTW</a>&quot; by Paul Irish.</p>
+<p>The <em>box-sizing reset</em>, setting the <code>box-sizing</code> property to <code>border-box</code>.</p>
+<p>For more information, read the post &quot;<a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">Box-sizing: Border-box FTW</a>&quot; by Paul Irish.</p>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus"><span class="keyword">box</span>-sizing-reset()
 </code></pre>
@@ -44,6 +45,196 @@
 *<span class="pseudo">:before</span>,
 *<span class="pseudo">:after</span> <span class="rules">{
   <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;
+<span class="rule">}</span></span>
+</code></pre>
+</article><article id="normalize"><h1 id="-normalize-"><code>normalize()</code></h1>
+<p>The <em>normalize</em> reset makes browsers render all elements more consistently and in line with modern standards.</p>
+<p>For more information, refers to the <a href="https://github.com/necolas/normalize.css">original normalize repository</a>, by <a href="https://github.com/necolas">Nicolas Gallagher</a>.</p>
+<h3 id="usage">Usage</h3>
+<pre><code class="lang-stylus"><span class="function"><span class="title">normalize</span><span class="params">()</span></span>
+</code></pre>
+<h3 id="result">Result</h3>
+<pre><code class="lang-css"><span class="tag">html</span> <span class="rules">{
+  <span class="rule"><span class="attribute">font-family</span>:<span class="value"> sans-serif</span></span>;
+  <span class="rule"><span class="attribute">-ms-text-size-adjust</span>:<span class="value"> <span class="number">100%</span></span></span>;
+  <span class="rule"><span class="attribute">-webkit-text-size-adjust</span>:<span class="value"> <span class="number">100%</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">body</span> <span class="rules">{
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">article</span>,
+<span class="tag">aside</span>,
+<span class="tag">details</span>,
+<span class="tag">figcaption</span>,
+<span class="tag">figure</span>,
+<span class="tag">footer</span>,
+<span class="tag">header</span>,
+<span class="tag">hgroup</span>,
+<span class="tag">main</span>,
+<span class="tag">nav</span>,
+<span class="tag">section</span>,
+<span class="tag">summary</span> <span class="rules">{
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">audio</span>,
+<span class="tag">canvas</span>,
+<span class="tag">progress</span>,
+<span class="tag">video</span> <span class="rules">{
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
+  <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> baseline</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">audio</span><span class="pseudo">:not(</span><span class="attr_selector">[controls]</span>) <span class="rules">{
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="attr_selector">[hidden]</span>,
+<span class="tag">template</span> <span class="rules">{
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">a</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> transparent</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">a</span><span class="pseudo">:active</span>,
+<span class="tag">a</span><span class="pseudo">:hover</span> <span class="rules">{
+  <span class="rule"><span class="attribute">outline</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">abbr</span><span class="attr_selector">[title]</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1px</span> dotted</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">b</span>,
+<span class="tag">strong</span> <span class="rules">{
+  <span class="rule"><span class="attribute">font-weight</span>:<span class="value"> bold</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">dfn</span> <span class="rules">{
+  <span class="rule"><span class="attribute">font-style</span>:<span class="value"> italic</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">h1</span> <span class="rules">{
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2em</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0.67em</span> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">mark</span> <span class="rules">{
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ff0</span></span></span>;
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#000</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">small</span> <span class="rules">{
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">80%</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">sub</span>,
+<span class="tag">sup</span> <span class="rules">{
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">75%</span></span></span>;
+  <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">0</span></span></span>;
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;
+  <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> baseline</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">sup</span> <span class="rules">{
+  <span class="rule"><span class="attribute">top</span>:<span class="value"> -<span class="number">0.5em</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">sub</span> <span class="rules">{
+  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> -<span class="number">0.25em</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">img</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">svg</span><span class="pseudo">:not(</span><span class="pseudo">:root)</span> <span class="rules">{
+  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">figure</span> <span class="rules">{
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">1em</span> <span class="number">40px</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">hr</span> <span class="rules">{
+  <span class="rule"><span class="attribute">-webkit-box-sizing</span>:<span class="value"> content-box</span></span>;
+  <span class="rule"><span class="attribute">-moz-box-sizing</span>:<span class="value"> content-box</span></span>;
+  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> content-box</span></span>;
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">pre</span> <span class="rules">{
+  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> auto</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">code</span>,
+<span class="tag">kbd</span>,
+<span class="tag">pre</span>,
+<span class="tag">samp</span> <span class="rules">{
+  <span class="rule"><span class="attribute">font-family</span>:<span class="value"> monospace, monospace</span></span>;
+  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1em</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">button</span>,
+<span class="tag">input</span>,
+<span class="tag">optgroup</span>,
+<span class="tag">select</span>,
+<span class="tag">textarea</span> <span class="rules">{
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> inherit</span></span>;
+  <span class="rule"><span class="attribute">font</span>:<span class="value"> inherit</span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">button</span> <span class="rules">{
+  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> visible</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">button</span>,
+<span class="tag">select</span> <span class="rules">{
+  <span class="rule"><span class="attribute">text-transform</span>:<span class="value"> none</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">button</span>,
+<span class="tag">html</span> <span class="tag">input</span><span class="attr_selector">[type=&quot;button&quot;]</span>,
+<span class="tag">input</span><span class="attr_selector">[type=&quot;reset&quot;]</span>,
+<span class="tag">input</span><span class="attr_selector">[type=&quot;submit&quot;]</span> <span class="rules">{
+  <span class="rule"><span class="attribute">-webkit-appearance</span>:<span class="value"> button</span></span>;
+  <span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">button</span><span class="attr_selector">[disabled]</span>,
+<span class="tag">html</span> <span class="tag">input</span><span class="attr_selector">[disabled]</span> <span class="rules">{
+  <span class="rule"><span class="attribute">cursor</span>:<span class="value"> default</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">button</span><span class="pseudo">::-moz-focus-inner</span>,
+<span class="tag">input</span><span class="pseudo">::-moz-focus-inner</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">0</span></span></span>;
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">input</span> <span class="rules">{
+  <span class="rule"><span class="attribute">line-height</span>:<span class="value"> normal</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">input</span><span class="attr_selector">[type=&quot;checkbox&quot;]</span>,
+<span class="tag">input</span><span class="attr_selector">[type=&quot;radio&quot;]</span> <span class="rules">{
+  <span class="rule"><span class="attribute">-webkit-box-sizing</span>:<span class="value"> border-box</span></span>;
+  <span class="rule"><span class="attribute">-moz-box-sizing</span>:<span class="value"> border-box</span></span>;
+  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">input</span><span class="attr_selector">[type=&quot;number&quot;]</span><span class="pseudo">::-webkit-inner-spin-button</span>,
+<span class="tag">input</span><span class="attr_selector">[type=&quot;number&quot;]</span><span class="pseudo">::-webkit-outer-spin-button</span> <span class="rules">{
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> auto</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">input</span><span class="attr_selector">[type=&quot;search&quot;]</span> <span class="rules">{
+  <span class="rule"><span class="attribute">-webkit-appearance</span>:<span class="value"> textfield</span></span>;
+  <span class="rule"><span class="attribute">-webkit-box-sizing</span>:<span class="value"> content-box</span></span>;
+  <span class="rule"><span class="attribute">-moz-box-sizing</span>:<span class="value"> content-box</span></span>;
+  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> content-box</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">input</span><span class="attr_selector">[type=&quot;search&quot;]</span><span class="pseudo">::-webkit-search-cancel-button</span>,
+<span class="tag">input</span><span class="attr_selector">[type=&quot;search&quot;]</span><span class="pseudo">::-webkit-search-decoration</span> <span class="rules">{
+  <span class="rule"><span class="attribute">-webkit-appearance</span>:<span class="value"> none</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">fieldset</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#c0c0c0</span></span></span>;
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> <span class="number">2px</span></span></span>;
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0.35em</span> <span class="number">0.625em</span> <span class="number">0.75em</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">legend</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">0</span></span></span>;
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">textarea</span> <span class="rules">{
+  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> auto</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">optgroup</span> <span class="rules">{
+  <span class="rule"><span class="attribute">font-weight</span>:<span class="value"> bold</span></span>;
+<span class="rule">}</span></span>
+<span class="tag">table</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border-collapse</span>:<span class="value"> collapse</span></span>;
+  <span class="rule"><span class="attribute">border-spacing</span>:<span class="value"> <span class="number">0</span></span></span>;
+<span class="rule">}</span></span>
+<span class="tag">td</span>,
+<span class="tag">th</span> <span class="rules">{
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
 </article><h2>mixins</h2><article id="calc"><h1 id="calc-">calc()</h1>
