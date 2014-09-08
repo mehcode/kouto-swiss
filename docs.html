@@ -1407,13 +1407,16 @@ ks-<span class="keyword">color</span>-fallback = false
 <blockquote>
 <p>This mixin is based on which from <a href="http://bourbon.io">bourbon.io</a>.</p>
 </blockquote>
+<p>A height declaration is required for this to function.</p>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-stylus"><span class="tag">h1</span>
+    <span class="attribute">height</span> 75px
     <span class="attribute">background</span> <span class="function">url</span>( logo<span class="class">.png</span> ) <span class="attribute">top</span> <span class="attribute">left</span> <span class="value">no-repeat</span>
     <span class="function">hide-text</span>()
 </code></pre>
 <h3 id="result">Result</h3>
 <pre><code class="lang-css"><span class="tag">h1</span> <span class="rules">{
+  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">75px</span></span></span>;
   <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;logo.png&quot;</span>) top left no-repeat</span></span>;
   <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
 <span class="rule">}</span></span>
