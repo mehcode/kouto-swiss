@@ -3,7 +3,7 @@
     stylus = <span class="keyword">require</span>( <span class="string">&quot;stylus&quot;</span> ),
     koutoSwiss = <span class="keyword">require</span>( <span class="string">&quot;kouto-swiss&quot;</span> ),
     server = connect();
-    
+
 <span class="function"><span class="keyword">function</span> <span class="title">compile</span><span class="params">( str, path )</span> {</span>
     <span class="keyword">return</span> stylus( str )
         .set( <span class="string">&quot;filename&quot;</span>, path )

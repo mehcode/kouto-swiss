@@ -1,29 +1,29 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>docs - kouto swiss - A complete CSS framework for Stylus</title><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="styles/styles.css"><!--if lt IE 9script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
---></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>usage</strong><ul><li><a href="#grunt">grunt</a></li><li><a href="#gulp">gulp</a></li><li><a href="#third-party">third-party</a></li><li><a href="#middleware">middleware</a></li><li><a href="#stylus">stylus</a></li><li><a href="#nib">nib</a></li></ul></li><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li><li><a href="#normalize">normalize</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#keyframes">keyframes</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#ellipsis">ellipsis</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.10.2</strong>, build on top of Stylus <strong class="stylus">v0.47.3</strong></p></section><div class="docs"><h2>usage</h2><article id="grunt"><h1>Included in compilation with grunt</h1><p>To use <strong>kouto swiss</strong> with grunt, you can use <a href="https://www.npmjs.org/package/grunt-contrib-stylus">grunt-contrib-stylus</a>, and include <strong>kouto swiss</strong> in your <code>use</code> option for the task.</p>
+--></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>usage</strong><ul><li><a href="#grunt">grunt</a></li><li><a href="#gulp">gulp</a></li><li><a href="#third-party">third-party</a></li><li><a href="#middleware">middleware</a></li><li><a href="#stylus">stylus</a></li><li><a href="#nib">nib</a></li></ul></li><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li><li><a href="#normalize">normalize</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#keyframes">keyframes</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#ellipsis">ellipsis</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.10.3</strong>, build on top of Stylus <strong class="stylus">v0.49.1</strong></p></section><div class="docs"><h2>usage</h2><article id="grunt"><h1>Included in compilation with grunt</h1><p>To use <strong>kouto swiss</strong> with grunt, you can use <a href="https://www.npmjs.org/package/grunt-contrib-stylus">grunt-contrib-stylus</a>, and include <strong>kouto swiss</strong> in your <code>use</code> option for the task.</p>
 <p>You can also use <a href="https://www.npmjs.org/package/grunt-ks-stylus">grunt-ks-stylus</a>, which is a fork of <strong>grunt-contrib-stylus</strong>, with <strong>kouto swiss</strong> included.</p>
 </article><article id="gulp"><h1>Included in compilation with gulp</h1><p>To use <strong>kouto swiss</strong> with gulp, use <a href="https://www.npmjs.org/package/gulp-stylus">gulp-stylus</a> and include <strong>kouto swiss</strong> in your <code>use</code> option for the task.</p>
 </article><article id="third-party"><h1>Included in compilation with third-party tools</h1><p>To use <strong>kouto swiss</strong> with third-party tools like <a href="https://incident57.com/codekit/">Codekit</a> or <a href="http://alphapixels.com/prepros/">Prepros</a>, you should include <strong>kouto swiss</strong> on your project by yourself. You can download it <a href="https://github.com/krkn/kouto-swiss/releases">on github</a>.</p>
 <p><em>More informations coming soon.</em></p>
 </article><article id="middleware"><h1>As middleware, for <em>on the fly</em> compilation.</h1><p>There&apos;s an exemple of how to use stylus with kouto-swiss within Connect or Express.</p>
-<pre><code class="lang-javascript"><span class="keyword">var</span> connect = <span class="keyword">require</span>( <span class="string">&quot;connect&quot;</span> ),
-    stylus = <span class="keyword">require</span>( <span class="string">&quot;stylus&quot;</span> ),
-    koutoSwiss = <span class="keyword">require</span>( <span class="string">&quot;kouto-swiss&quot;</span> ),
+<pre><code class="lang-javascript"><span class="keyword">var</span> connect = require( <span class="string">&quot;connect&quot;</span> ),
+    stylus = require( <span class="string">&quot;stylus&quot;</span> ),
+    koutoSwiss = require( <span class="string">&quot;kouto-swiss&quot;</span> ),
     server = connect();
 
-<span class="function"><span class="keyword">function</span> <span class="title">compile</span><span class="params">( str, path )</span> </span>{
-    <span class="keyword">return</span> stylus( str )
-        .set( <span class="string">&quot;filename&quot;</span>, path )
-        .set( <span class="string">&quot;compress&quot;</span>, <span class="keyword">true</span> )
-        .<span class="keyword">use</span>( koutoSwiss() );
+<span class="function">function <span class="title">compile</span><span class="params">( str, path )</span> </span>{
+    <span class="function"><span class="keyword">return</span> <span class="title">stylus</span><span class="params">( str )</span>
+        .<span class="title">set</span><span class="params">( <span class="string">&quot;filename&quot;</span>, path )</span>
+        .<span class="title">set</span><span class="params">( <span class="string">&quot;compress&quot;</span>, <span class="keyword">true</span> )</span>
+        .<span class="title">use</span><span class="params">( koutoSwiss()</span> )</span>;
 }
 
-server.<span class="keyword">use</span>( stylus.middleware( {
+server.use( stylus.middleware( {
     src: __dirname,
     compile: compile
 } ) );
 </code></pre>
 </article><article id="stylus"><h1>Stylus API</h1><p>To gain access to the kouto swiss tools from your Stylus files, simply add:</p>
-<pre><code class="lang-stylus">@<span class="keyword">import</span> <span class="string">&quot;kouto-swiss&quot;</span>
+<pre><code class="lang-stylus"><span class="variable">@import</span> <span class="string">&quot;kouto-swiss&quot;</span>
 </code></pre>
 </article><article id="nib"><h1>Using nib with kouto swiss</h1><p><strong>kouto swiss</strong> is highly inspired by <a href="http://visionmedia.github.io/nib/">nib</a>.</p>
 <p>As kouto swiss and nib shares some functions &amp; mixins names, <strong>it&apos;s not a great idea</strong> to use nib and kouto swiss together.</p>
@@ -66,10 +66,10 @@ server.<span class="keyword">use</span>( stylus.middleware( {
 <p>For more information, read the post &quot;<a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">Box-sizing: Border-box FTW</a>&quot; by Paul Irish.</p>
 <p><strong>Note:</strong> From version <code>0.10</code>, the <code>box-sizing-reset()</code> function has changed his behaviour when its called from the root level : it <a href="http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/">use an inheritance pattern</a>, which produce the same result, and is more reliable for cases where you want to use an other <em>box model</em> for a part of your page.</p>
 <h3>Usage</h3><pre><code class="lang-stylus">
-<span class="keyword">box</span>-sizing-reset()
+box-sizing-<span class="operator"><span class="keyword">reset</span>()
 
 article
-    <span class="keyword">box</span>-sizing-reset()
+    box-sizing-<span class="keyword">reset</span>()</span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">html</span> <span class="rules">{
   <span class="rule"><span class="attribute">-webkit-box-sizing</span>:<span class="value"> border-box</span></span>;
@@ -93,7 +93,7 @@ article
 </code></pre>
 </article><article id="normalize"><h1><code>normalize()</code></h1><p>The <em>normalize</em> reset makes browsers render all elements more consistently and in line with modern standards.</p>
 <p>For more information, refers to the <a href="https://github.com/necolas/normalize.css">original normalize repository</a>, by <a href="https://github.com/necolas">Nicolas Gallagher</a>.</p>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="function"><span class="title">normalize</span><span class="params">()</span></span>
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="built_in">normalize</span>()
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">html</span> <span class="rules">{
   <span class="rule"><span class="attribute">font-family</span>:<span class="value"> sans-serif</span></span>;
@@ -284,11 +284,11 @@ article
 <li><code>expr</code>: expression for calc. <strong>Must be quoted</strong>.</li>
 <li><code>fallback</code>: a fallback value for unsupported browsers. <em>Optional</em>.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="keyword">body</span>
-    width calc( <span class="string">&quot;100% - 80px&quot;</span> )
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="function">body
+    width <span class="title">calc</span><span class="params">( <span class="string">&quot;100% - 80px&quot;</span> )</span>
 
-<span class="keyword">body</span>
-    width calc( <span class="string">&quot;100% - 80px&quot;</span>, <span class="number">90</span>% )
+body
+    width <span class="title">calc</span><span class="params">( <span class="string">&quot;100% - 80px&quot;</span>, <span class="number">90</span>% )</span></span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">body</span> <span class="rules">{
   <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="function">-webkit-calc</span>(<span class="number">100%</span> - <span class="number">80px</span>)</span></span>;
@@ -340,23 +340,23 @@ font-face( <span class="string">&quot;OpenSans&quot;</span>, <span class="string
 </article><article id="keyframes"><h1>keyframes &amp; animation</h1><p>To make animations with css3, you&apos;ll need to use the <code>animation</code> property &amp; the <code>@keyframes</code> structure.</p>
 <p>The <code>animation</code> property is already handled in <strong>kouto swiss</strong> by the <a href="#vendors">vendors mecanism</a>.</p>
 <p>The <code>@keyframes</code> structure is currently handled by the <a href="http://learnboost.github.io/stylus/docs/keyframes.html">Stylus language</a>.<br><strong>Note:</strong> as precised on the stylus documentation, the <em>vendor expansion</em> of the <code>@keyframes</code> structure will be removed from Stylus in <code>1.0</code> version. When this time will come, we&apos;ll had that behaviour to <strong>kouto swiss</strong>.</p>
-<h3>Usage</h3><pre><code class="lang-stylus">@keyframes my-rainbow-animation
-    <span class="number">0</span><span class="comment">%</span>
-        color red
-    <span class="number">14</span><span class="comment">%</span>
-        color orange
-    <span class="number">28</span><span class="comment">%</span>
-        color yellow
-    <span class="number">42</span><span class="comment">%</span>
-        color green
-    <span class="number">56</span><span class="comment">%</span>
-        color blue
-    <span class="number">70</span><span class="comment">%</span>
-        color indigo
-    <span class="number">84</span><span class="comment">%</span>
-        color violet
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="variable">@keyframes</span> my-rainbow-animation
+    <span class="number">0</span>%
+        <span class="keyword">color</span> red
+    <span class="number">14</span>%
+        <span class="keyword">color</span> orange
+    <span class="number">28</span>%
+        <span class="keyword">color</span> yellow
+    <span class="number">42</span>%
+        <span class="keyword">color</span> green
+    <span class="number">56</span>%
+        <span class="keyword">color</span> blue
+    <span class="number">70</span>%
+        <span class="keyword">color</span> indigo
+    <span class="number">84</span>%
+        <span class="keyword">color</span> violet
 
-<span class="keyword">div</span>.rainbow
+div.rainbow
     animation rainbow <span class="number">3</span>s linear
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span><span class="class">.rainbow</span> <span class="rules">{
@@ -584,24 +584,24 @@ div
 </article><article id="vendors"><h1>Vendors Prefixes</h1><p><strong>kouto swiss</strong> comes with automatic vendor prefixer for the following properties.<br>You can define the behavior of the prefixer by changing the value of the global variable <code>ks-vendors-prefixes</code>.</p>
 <h2>Recommended prefixes (by default)</h2><p>By default, <strong>kouto swiss</strong> use the data from <a href="http://caniuse.com">caniuse</a> website to select the prefixes to use.</p>
 <p>You can select which version of browsers you want to support by modifying the following global variables.</p>
-<pre><code><span class="variable">ks-support-ie =</span> <span class="number">8</span>
-<span class="variable">ks-support-firefox =</span> <span class="number">25</span>
-<span class="variable">ks-support-chrome =</span> <span class="number">20</span>
-<span class="variable">ks-support-safari =</span> <span class="number">5</span>
-<span class="variable">ks-support-opera =</span> <span class="number">15</span>
-<span class="variable">ks-support-ios-safari =</span> <span class="number">5</span>
-<span class="variable">ks-support-opera-mini =</span> <span class="constant">false</span>
-<span class="variable">ks-support-android-browser =</span> <span class="constant">false</span>
-<span class="variable">ks-support-blackberry-browser =</span> <span class="constant">false</span>
-<span class="variable">ks-support-opera-mobile =</span> <span class="constant">false</span>
-<span class="variable">ks-support-android-chrome =</span> <span class="constant">false</span>
-<span class="variable">ks-support-android-firefox =</span> <span class="constant">false</span>
-<span class="variable">ks-support-ie-mobile =</span> <span class="constant">false</span>
+<pre><code><span class="setting">ks-support-ie = <span class="value"><span class="number">8</span></span></span>
+<span class="setting">ks-support-firefox = <span class="value"><span class="number">25</span></span></span>
+<span class="setting">ks-support-chrome = <span class="value"><span class="number">20</span></span></span>
+<span class="setting">ks-support-safari = <span class="value"><span class="number">5</span></span></span>
+<span class="setting">ks-support-opera = <span class="value"><span class="number">15</span></span></span>
+<span class="setting">ks-support-ios-safari = <span class="value"><span class="number">5</span></span></span>
+<span class="setting">ks-support-opera-mini = <span class="value"><span class="keyword">false</span></span></span>
+<span class="setting">ks-support-android-browser = <span class="value"><span class="keyword">false</span></span></span>
+<span class="setting">ks-support-blackberry-browser = <span class="value"><span class="keyword">false</span></span></span>
+<span class="setting">ks-support-opera-mobile = <span class="value"><span class="keyword">false</span></span></span>
+<span class="setting">ks-support-android-chrome = <span class="value"><span class="keyword">false</span></span></span>
+<span class="setting">ks-support-android-firefox = <span class="value"><span class="keyword">false</span></span></span>
+<span class="setting">ks-support-ie-mobile = <span class="value"><span class="keyword">false</span></span></span>
 </code></pre><p>You can set a number, which will act as &quot;<em>greater or equal</em>&quot; support, a <a href="https://github.com/isaacs/node-semver#ranges">semver range</a> string, or the <code>false</code> value, to be ignored.</p>
 <p>If you want to ignore the <a href="http://caniuse.com">caniuse</a> recommandations, add the features you want to ignore to the <code>ks-support-ignore-features</code> global variable.</p>
 <p>For the properties not registered in <a href="http://caniuse.com">caniuse</a>, the implementation is based on <a href="http://peter.sh/experiments/vendor-prefixed-css-property-overview/">the list of Peter Beverloo</a>.</p>
 <p>You can set the following global variable to use the recommended prefixes for the variable.</p>
-<pre><code><span class="attribute">ks-vendors-prefixes </span>=<span class="string"> recommended</span>
+<pre><code><span class="setting">ks-vendors-prefixes = <span class="value">recommended</span></span>
 </code></pre><p>The following properties are not registered in <a href="http://caniuse.com">caniuse</a>.</p>
 <h3>Supported properties</h3><p>The following properties are implemented by the vendor mecanism and will be automaticaly prefixed using <a href="http://caniuse.com">caniuse</a> data: <code>align-content</code>, <code>align-items</code>, <code>align-self</code>, <code>animation</code>, <code>animation-delay</code>, <code>animation-direction</code>, <code>animation-duration</code>, <code>animation-fill-mode</code>, <code>animation-iteration-count</code>, <code>animation-name</code>, <code>animation-play-state</code>, <code>animation-timing-function</code>, <code>appearance</code>, <code>backface-visibility</code>, <code>background-clip</code>, <code>background-origin</code>, <code>background-size</code>, <code>border-image-source</code>, <code>border-image-slice</code>, <code>border-image-width</code>, <code>border-image-outset</code>, <code>border-image-repeat</code>, <code>border-image</code>, <code>box-sizing</code>, <code>clip-path</code>, <code>column-count</code>, <code>column-fill</code>, <code>column-gap</code>, <code>column-rule</code>, <code>column-rule-color</code>, <code>column-rule-style</code>, <code>column-rule-width</code>, <code>column-span</code>, <code>column-width</code>, <code>columns</code>, <code>flex</code>, <code>flex-basis</code>, <code>flex-direction</code>, <code>flex-flow</code>, <code>flex-grow</code>, <code>flex-shrink</code>, <code>flex-wrap</code>, <code>grid</code>, <code>grid-area</code>, <code>grid-auto-columns</code>, <code>grid-auto-flow</code>, <code>grid-auto-position</code>, <code>grid-auto-rows</code>, <code>grid-column</code>, <code>grid-column-end</code>, <code>grid-column-start</code>, <code>grid-row</code>, <code>grid-row-end</code>, <code>grid-row-start</code>, <code>grid-template</code>, <code>grid-template-areas</code>, <code>grid-template-columns</code>, <code>grid-template-rows</code>, <code>hyphens</code>, <code>justify-content</code>, <code>mask</code>, <code>opacity</code>, <code>order</code>, <code>perspective</code>, <code>perspective-origin</code>, <code>transform</code>, <code>transform-origin</code>, <code>transform-style</code>, <code>transition</code>, <code>transition-delay</code>, <code>transition-duration</code>, <code>transition-property</code>, <code>transition-timing-function</code> </p>
 <h3>Unregistered properties</h3><p>The following properties are not registered (yet?) in <a href="http://caniuse.com">caniuse</a>, and use the prefixes as indicated:</p>
@@ -614,7 +614,7 @@ div
 </li>
 </ul>
 <h2>Specific prefixes</h2><p>If you want specific prefixes, you can force them by setting the global variable <code>ks-vendors-prefixes</code> with the prefixes you want.  </p>
-<h2>No vendor prefixes</h2><pre><code><span class="variable">ks-vendors-prefixes =</span> <span class="constant">false</span>
+<h2>No vendor prefixes</h2><pre><code><span class="setting">ks-vendors-prefixes = <span class="value"><span class="keyword">false</span></span></span>
 </code></pre><p>If you don&apos;t want to let <strong>kouto swiss</strong> to add vendor prefixes, and do the job yourself with such plugins like <code>autoprefixer</code>, simply set <code>ks-vendors-prefixes</code> to false.</p>
 <h2>The <code>vendor</code> mixin</h2><p>You can also define your own vendors mixins with the <strong>kouto swiss</strong> built-in vendor mixin.</p>
 <p><code>vendor( property, value [, feature = null [, prefixes = null [, official = true ] ] ] )</code></p>
@@ -626,42 +626,42 @@ div
 <li><code>official</code>: a boolean to display the non-prefixed property, if <code>feature</code> is set to false. </li>
 </ul>
 <h3>Usage</h3><pre><code class="lang-stylus">
-button
-    align-content stretch
+<span class="keyword">button</span>
+    <span class="keyword">align</span>-content stretch
 
 ks-support-ie = <span class="number">11</span>
 
-button
-    align-content stretch
+<span class="keyword">button</span>
+    <span class="keyword">align</span>-content stretch
 
 ks-vendors-prefixes = o ms webkit moz
 
-button
-    clip-path <span class="literal">none</span>
+<span class="keyword">button</span>
+    <span class="keyword">clip</span>-path none
 
 ks-vendors-prefixes = recommended
 
-button
-    clip-path <span class="literal">none</span>
+<span class="keyword">button</span>
+    <span class="keyword">clip</span>-path none
 
-ks-vendors-prefixes = <span class="literal">false</span>
+ks-vendors-prefixes = false
 
-button
-    clip-path <span class="literal">none</span>
+<span class="keyword">button</span>
+    <span class="keyword">clip</span>-path none
 
-button
-    vendor( <span class="string">&quot;columns&quot;</span>, <span class="literal">auto</span> <span class="literal">auto</span>, feature: <span class="string">&quot;multicolumn&quot;</span> )
+<span class="keyword">button</span>
+    vendor( <span class="string">&quot;columns&quot;</span>, auto auto, feature: <span class="string">&quot;multicolumn&quot;</span> )
 
-button
-    vendor( <span class="string">&quot;columns&quot;</span>, <span class="literal">auto</span> <span class="literal">auto</span>, prefixes: webkit moz ms o )
+<span class="keyword">button</span>
+    vendor( <span class="string">&quot;columns&quot;</span>, auto auto, prefixes: webkit moz ms o )
 
-button
-    vendor( <span class="string">&quot;columns&quot;</span>, <span class="literal">auto</span> <span class="literal">auto</span>, prefixes: webkit moz ms o, official: <span class="literal">false</span> )
+<span class="keyword">button</span>
+    vendor( <span class="string">&quot;columns&quot;</span>, auto auto, prefixes: webkit moz ms o, official: false )
 
 ks-support-ignore-features = <span class="string">&quot;css3-boxsizing&quot;</span> <span class="string">&quot;css-animation&quot;</span>
 
-button
-    animation <span class="literal">none</span> <span class="number">0</span>s ease <span class="number">0</span>s <span class="number">1</span> <span class="literal">normal</span> <span class="literal">none</span>
+<span class="keyword">button</span>
+    animation none <span class="number">0</span>s ease <span class="number">0</span>s <span class="number">1</span> normal none
     box-sizing content-box
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">button</span> <span class="rules">{
@@ -716,11 +716,11 @@ button
 <li><code>value</code>: value to convert.</li>
 <li><code>base</code>: base for conversion. <em>Optional</em> Defaults to <code>16</code>.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="keyword">div</span>
-    font-<span class="keyword">size</span> em( <span class="number">12</span>px, <span class="number">24</span> )
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="tag">div</span>
+    <span class="attribute">font-size</span> <span class="function">em</span>( 12px, 24 )
 
-<span class="keyword">div</span>
-    font-<span class="keyword">size</span> em( <span class="number">16</span> )
+<span class="tag">div</span>
+    <span class="attribute">font-size</span> <span class="function">em</span>( 16 )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.5em</span></span></span>;
@@ -735,21 +735,21 @@ button
 <ul>
 <li><code>value</code>: value to convert.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="keyword">div</span>
-    font-size <span class="keyword">rem</span>( <span class="number">12</span>px )
+<h3>Usage</h3><pre><code class="lang-stylus">div
+    font-size <span class="comment">rem( 12px )</span>
 
-ks-<span class="keyword">rem</span>-base = <span class="number">20</span>px
+ks-<span class="comment">rem-base = 20px</span>
 
-<span class="keyword">div</span>
-    font-size <span class="keyword">rem</span>( <span class="number">16</span> )
+div
+    font-size <span class="comment">rem( 16 )</span>
 </code></pre>
-<h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.75rem</span></span></span>;
-<span class="rule">}</span></span>
+<h3>Result</h3><pre><code class="lang-css">div {
+  font-size: <span class="number">0</span>.<span class="number">75</span><span class="comment">rem;</span>
+}
 
-<span class="tag">div</span> <span class="rules">{
-  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.8rem</span></span></span>;
-<span class="rule">}</span></span>
+div {
+  font-size: <span class="number">0</span>.<span class="number">8</span><span class="comment">rem;</span>
+}
 </code></pre>
 </article><article id="percent"><h1>percent()</h1><p>The <code>percent</code> function makes a simple percentage convertion operation. It takes two operands, makes a percentage of the first by the second, and return the result, with a percent unit.</p>
 <blockquote>
@@ -808,17 +808,17 @@ ks-<span class="keyword">rem</span>-base = <span class="number">20</span>px
 <li><code>ks-major-twelfth</code>: 3</li>
 <li><code>ks-double-octave</code>: 4 </li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="keyword">div</span>
-    font-<span class="keyword">size</span> modular-scale( <span class="number">16</span>px, <span class="number">1</span>, <span class="number">1.5</span> )
+<h3>Usage</h3><pre><code class="lang-stylus">div
+    font-<span class="keyword">size</span> modular-<span class="keyword">scale</span>( <span class="number">16</span>px, <span class="number">1</span>, <span class="number">1.5</span> )
 
-<span class="keyword">div</span>
-    font-<span class="keyword">size</span> modular-scale( <span class="number">16</span>px, <span class="number">2</span>, <span class="number">1.618</span> )
+div
+    font-<span class="keyword">size</span> modular-<span class="keyword">scale</span>( <span class="number">16</span>px, <span class="number">2</span>, <span class="number">1.618</span> )
 
-<span class="keyword">div</span>
-    font-<span class="keyword">size</span> modular-scale( <span class="number">16</span>px, -<span class="number">2</span>, ks-octave )
+div
+    font-<span class="keyword">size</span> modular-<span class="keyword">scale</span>( <span class="number">16</span>px, -<span class="number">2</span>, ks-octave )
 
-<span class="keyword">div</span>
-    font-<span class="keyword">size</span> modular-scale( <span class="number">1</span>em, <span class="number">2</span>, <span class="number">1.5</span> )
+div
+    font-<span class="keyword">size</span> modular-<span class="keyword">scale</span>( <span class="number">1</span>em, <span class="number">2</span>, <span class="number">1.5</span> )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">24px</span></span></span>;
@@ -842,11 +842,11 @@ ks-<span class="keyword">rem</span>-base = <span class="number">20</span>px
 <li><code>base</code>: number base to scale.</li>
 <li><code>step</code>: step to scale.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="keyword">div</span>
-    font-<span class="keyword">size</span> golden-ratio( <span class="number">16</span>px, <span class="number">1</span> )
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="tag">div</span>
+    <span class="attribute">font-size</span> <span class="function">golden-ratio</span>( 16px, 1 )
 
-<span class="keyword">div</span>
-    font-<span class="keyword">size</span> golden-ratio( <span class="number">1</span>em, <span class="number">2</span> )
+<span class="tag">div</span>
+    <span class="attribute">font-size</span> <span class="function">golden-ratio</span>( 1em, 2 )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">25.888px</span></span></span>;
@@ -880,21 +880,21 @@ ks-<span class="keyword">rem</span>-base = <span class="number">20</span>px
 <span class="rule">}</span></span>
 </code></pre>
 <h2>Implicit color fallback</h2><p>The <code>implicit color fallback</code> mecanism allows you to use the <code>color-fallback</code> function without calling it, by declaring an <code>ks-color-fallback</code> variable to <code>true</code>.</p>
-<h3>Usage</h3><pre><code class="lang-stylus">.foo
-    <span class="keyword">color</span> rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
+<h3>Usage</h3><pre><code class="lang-stylus">.<span class="function">foo
+    color <span class="title">rgba</span><span class="params">( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )</span>
 
-ks-<span class="keyword">color</span>-fallback = true
+ks-color-fallback </span>= <span class="keyword">true</span>
+
+.<span class="function">bar
+    color <span class="title">rgba</span><span class="params">( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )</span>
 
 .bar
-    <span class="keyword">color</span> rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
+    background <span class="title">rgba</span><span class="params">( <span class="number">202</span>, <span class="number">43</span>, <span class="number">120</span>, <span class="number">.5</span> )</span> <span class="title">url</span><span class="params">( test.png )</span> top left repeat
 
-.bar
-    background rgba( <span class="number">202</span>, <span class="number">43</span>, <span class="number">120</span>, <span class="number">.5</span> ) url( test.png ) top left repeat
+ks-color-fallback </span>= <span class="keyword">false</span>
 
-ks-<span class="keyword">color</span>-fallback = false
-
-.foo
-    <span class="keyword">color</span> rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
+.<span class="function">foo
+    color <span class="title">rgba</span><span class="params">( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )</span></span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="class">.foo</span> <span class="rules">{
   <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="function">rgba</span>( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )</span></span>;
@@ -919,9 +919,9 @@ ks-<span class="keyword">color</span>-fallback = false
 <ul>
 <li><code>color</code>: color to analyse.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="input"><span class="prompt">.luminosity
-    background #ff0
-    color luminosity( #ff0 ) &gt;</span> <span class="number">0</span>.<span class="number">5</span> ? black <span class="symbol">:</span> white</span>
+<h3>Usage</h3><pre><code class="lang-stylus">.luminosity
+    background <span class="preprocessor">#ff0</span>
+    <span class="keyword">color</span> luminosity( <span class="preprocessor">#ff0 ) &gt; 0.5 ? black : white</span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="class">.luminosity</span> <span class="rules">{
   <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ff0</span></span></span>;
@@ -1119,10 +1119,10 @@ ks-<span class="keyword">color</span>-fallback = false
     fixed <span class="number">10</span>px <span class="number">20</span>px <span class="number">30</span>px <span class="number">40</span>px    
 
 <span class="keyword">div</span>
-    fixed <span class="number">10</span>px <span class="literal">false</span> <span class="number">30</span>px
+    fixed <span class="number">10</span>px <span class="keyword">false</span> <span class="number">30</span>px
 
 <span class="keyword">div</span>
-    fixed <span class="number">10</span>px <span class="number">20</span>px <span class="literal">false</span> <span class="number">40</span>px
+    fixed <span class="number">10</span>px <span class="number">20</span>px <span class="keyword">false</span> <span class="number">40</span>px
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">position</span>:<span class="value"> static</span></span>;
@@ -1257,14 +1257,14 @@ ks-<span class="keyword">color</span>-fallback = false
 <ul>
 <li><code>name</code>: name of the stack. <strong>Must be quoted</strong>.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="title">body</span>
-    font-<span class="keyword">family</span> font-stack( <span class="string">&quot;Arial&quot;</span> )
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="keyword">body</span>
+    font-family font-stack( <span class="string">&quot;Arial&quot;</span> )
 
-<span class="title">body</span>
-    font-<span class="keyword">family</span> font-stack( <span class="string">&quot;Helvetica&quot;</span> )
+<span class="keyword">body</span>
+    font-family font-stack( <span class="string">&quot;Helvetica&quot;</span> )
 
-<span class="title">body</span>
-    font-<span class="keyword">family</span> font-stack( <span class="string">&quot;Lucida Console&quot;</span> )
+<span class="keyword">body</span>
+    font-family font-stack( <span class="string">&quot;Lucida Console&quot;</span> )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">body</span> <span class="rules">{
   <span class="rule"><span class="attribute">font-family</span>:<span class="value"> Arial, <span class="string">&quot;Helvetica Neue&quot;</span>, Helvetica, sans-serif</span></span>;
@@ -1333,7 +1333,7 @@ ks-<span class="keyword">color</span>-fallback = false
 <li><code>name</code>: name of the preset. <strong>Must be quoted</strong>.</li>
 </ul>
 <h3>Usage</h3><pre><code class="lang-stylus">div
-    transition <span class="literal">all</span> .<span class="number">25</span>s easing( <span class="string">&quot;in-quad&quot;</span> )
+    transition all <span class="number">.25</span><span class="function">s <span class="title">easing</span><span class="params">( <span class="string">&quot;in-quad&quot;</span> )</span></span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">-webkit-transition</span>:<span class="value"> all <span class="number">0.25s</span> <span class="function">cubic-bezier</span>(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>)</span></span>;
@@ -1436,8 +1436,8 @@ breakpointMain = <span class="keyword">only</span> screen, <span class="built_in
 <li><code>size</code>: width and height of the image, uses as <code>background-size</code> for the retina image. <em>Optional</em>. If none is given, the sizes are computed from the path. If it fails, the <code>background-size</code> value will be <code>contain</code>.</li>
 <li><code>suffix</code>: the suffix to add to the file to reach retina image. <em>Optional</em>. Default: <code>@2x</code>.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="keyword">div</span>
-  retina-image( <span class="string">&quot;logo.png&quot;</span>, <span class="number">277</span>px <span class="number">292</span>px, <span class="string">&quot;-2x&quot;</span> )
+<h3>Usage</h3><pre><code class="lang-stylus">div
+  retina-<span class="keyword">image</span>( <span class="string">&quot;logo.png&quot;</span>, <span class="number">277</span>px <span class="number">292</span>px, <span class="string">&quot;-2x&quot;</span> )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">&quot;logo.png&quot;</span>)</span></span>;
@@ -1460,31 +1460,31 @@ breakpointMain = <span class="keyword">only</span> screen, <span class="built_in
 <li><code>media</code>: the media of the query</li>
 <li><code>density</code>: pixel density for the query. <em>Optional</em>. Default to <code>1</code>.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus">+retina-<span class="keyword">query</span>( all, <span class="number">1.3</span> )
-    <span class="keyword">div</span>
-        color red
+<h3>Usage</h3><pre><code class="lang-stylus">+<span class="function">retina-query</span>( all, 1<span class="class">.3</span> )
+    <span class="tag">div</span>
+        <span class="attribute">color</span> red
 
-+retina-<span class="keyword">query</span>( only screen, <span class="number">2</span> )
-    <span class="keyword">div</span>
-        color red
++<span class="function">retina-query</span>( only screen, 2 )
+    <span class="tag">div</span>
+        <span class="attribute">color</span> red
 
-+retina-<span class="keyword">query</span>( screen )
-    <span class="keyword">div</span>
-        color red
++<span class="function">retina-query</span>( screen )
+    <span class="tag">div</span>
+        <span class="attribute">color</span> red
 </code></pre>
-<h3>Result</h3><pre><code class="lang-css">@media all <span class="literal">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>), all <span class="literal">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">1.3</span>), all <span class="literal">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>/<span class="number">1</span>), all <span class="literal">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>), all <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">125</span>dpi), all <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">1.3</span>dppx) {
+<h3>Result</h3><pre><code class="lang-css"><span class="annotation">@media</span> <span class="function">all <span class="title">and</span> <span class="params">(-webkit-min-device-pixel-ratio: <span class="number">1.3</span>)</span>, all <span class="title">and</span> <span class="params">(min--moz-device-pixel-ratio: <span class="number">1.3</span>)</span>, all <span class="title">and</span> <span class="params">(-o-min-device-pixel-ratio: <span class="number">1.3</span>/<span class="number">1</span>)</span>, all <span class="title">and</span> <span class="params">(min-device-pixel-ratio: <span class="number">1.3</span>)</span>, all <span class="title">and</span> <span class="params">(min-resolution: <span class="number">125</span>dpi)</span>, all <span class="title">and</span> <span class="params">(min-resolution: <span class="number">1.3</span>dppx)</span> </span>{
   div {
-    color:<span class="preprocessor"> #f00;</span>
+    color: #f00;
   }
 }
-@media only screen <span class="literal">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>), only screen <span class="literal">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">2</span>), only screen <span class="literal">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>/<span class="number">1</span>), only screen <span class="literal">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>), only screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">192</span>dpi), only screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">2</span>dppx) {
+<span class="annotation">@media</span> <span class="function">only screen <span class="title">and</span> <span class="params">(-webkit-min-device-pixel-ratio: <span class="number">2</span>)</span>, only screen <span class="title">and</span> <span class="params">(min--moz-device-pixel-ratio: <span class="number">2</span>)</span>, only screen <span class="title">and</span> <span class="params">(-o-min-device-pixel-ratio: <span class="number">2</span>/<span class="number">1</span>)</span>, only screen <span class="title">and</span> <span class="params">(min-device-pixel-ratio: <span class="number">2</span>)</span>, only screen <span class="title">and</span> <span class="params">(min-resolution: <span class="number">192</span>dpi)</span>, only screen <span class="title">and</span> <span class="params">(min-resolution: <span class="number">2</span>dppx)</span> </span>{
   div {
-    color:<span class="preprocessor"> #f00;</span>
+    color: #f00;
   }
 }
-@media screen <span class="literal">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>), screen <span class="literal">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">1</span>), screen <span class="literal">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>/<span class="number">1</span>), screen <span class="literal">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>), screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">96</span>dpi), screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">1</span>dppx) {
+<span class="annotation">@media</span> <span class="function">screen <span class="title">and</span> <span class="params">(-webkit-min-device-pixel-ratio: <span class="number">1</span>)</span>, screen <span class="title">and</span> <span class="params">(min--moz-device-pixel-ratio: <span class="number">1</span>)</span>, screen <span class="title">and</span> <span class="params">(-o-min-device-pixel-ratio: <span class="number">1</span>/<span class="number">1</span>)</span>, screen <span class="title">and</span> <span class="params">(min-device-pixel-ratio: <span class="number">1</span>)</span>, screen <span class="title">and</span> <span class="params">(min-resolution: <span class="number">96</span>dpi)</span>, screen <span class="title">and</span> <span class="params">(min-resolution: <span class="number">1</span>dppx)</span> </span>{
   div {
-    color:<span class="preprocessor"> #f00;</span>
+    color: #f00;
   }
 }
 </code></pre>
@@ -1537,17 +1537,17 @@ div
 <li><code>gut-width</code>: the size of the gutter between columns. All numbers given will be taken as percentages. <em>Optional</em> Default to <code>( 100% / cols ) * 0.1</code>.</li>
 </ul>
 <p>When using the <code>fluid</code> grid system, only one of the value is used to compute, proportionaly, the size of columns and gutters. If the two values are given, the <code>col-width</code> is used.</p>
-<h3>Usage</h3><pre><code class="lang-stylus">body
-    <span class="literal">gs</span>()
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="function">body
+    <span class="title">gs</span><span class="params">()</span>
 
 body
-    <span class="literal">gs</span>( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, 40px, 10px )
+    <span class="title">gs</span><span class="params">( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, <span class="number">40</span>px, <span class="number">10</span>px )</span>
 
 body
-    <span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span> )
+    <span class="title">gs</span><span class="params">( <span class="string">&quot;fluid&quot;</span> )</span>
 
 body
-    <span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )
+    <span class="title">gs</span><span class="params">( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )</span></span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">body</span> <span class="rules">{
   <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">960px</span></span></span>;
@@ -1575,47 +1575,47 @@ body
 <ul>
 <li><code>size</code>: size of the column. <em>Optional</em> Default to the total of columns in the grid.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="keyword">div</span>
-    col()
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="function">div
+    <span class="title">col</span><span class="params">()</span>
 
-<span class="keyword">div</span>
-    col( <span class="number">1</span> )
+div
+    <span class="title">col</span><span class="params">( <span class="number">1</span> )</span>
 
-<span class="keyword">div</span>
-    col( <span class="number">6</span> )
+div
+    <span class="title">col</span><span class="params">( <span class="number">6</span> )</span>
 
-<span class="literal">gs</span>( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, 40px, 10px )
+<span class="title">gs</span><span class="params">( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, <span class="number">40</span>px, <span class="number">10</span>px )</span>
 
-<span class="keyword">div</span>
-    col()
+div
+    <span class="title">col</span><span class="params">()</span>
 
-<span class="keyword">div</span>
-    col( <span class="number">1</span> )
+div
+    <span class="title">col</span><span class="params">( <span class="number">1</span> )</span>
 
-<span class="keyword">div</span>
-    col( <span class="number">6</span> )
+div
+    <span class="title">col</span><span class="params">( <span class="number">6</span> )</span>
 
-<span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span> )
+<span class="title">gs</span><span class="params">( <span class="string">&quot;fluid&quot;</span> )</span>
 
-<span class="keyword">div</span>
-    col()
+div
+    <span class="title">col</span><span class="params">()</span>
 
-<span class="keyword">div</span>
-    col( <span class="number">1</span> )
+div
+    <span class="title">col</span><span class="params">( <span class="number">1</span> )</span>
 
-<span class="keyword">div</span>
-    col( <span class="number">6</span> )
+div
+    <span class="title">col</span><span class="params">( <span class="number">6</span> )</span>
 
-<span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )
+<span class="title">gs</span><span class="params">( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )</span>
 
-<span class="keyword">div</span>
-    col()
+div
+    <span class="title">col</span><span class="params">()</span>
 
-<span class="keyword">div</span>
-    col( <span class="number">1</span> )
+div
+    <span class="title">col</span><span class="params">( <span class="number">1</span> )</span>
 
-<span class="keyword">div</span>
-    col( <span class="number">6</span> )
+div
+    <span class="title">col</span><span class="params">( <span class="number">6</span> )</span></span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
@@ -1704,23 +1704,23 @@ body
 </code></pre>
 </article><article id="row"><h1>row()</h1><p>Init a row for the current grid system.</p>
 <h3>Signature</h3><p><code>row()</code></p>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="keyword">div</span>
-    row()
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="function">div
+    <span class="title">row</span><span class="params">()</span>
 
-<span class="literal">gs</span>( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, 40px, 10px )
+<span class="title">gs</span><span class="params">( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, <span class="number">40</span>px, <span class="number">10</span>px )</span>
 
-<span class="keyword">div</span>
-    row()
+div
+    <span class="title">row</span><span class="params">()</span>
 
-<span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span> )
+<span class="title">gs</span><span class="params">( <span class="string">&quot;fluid&quot;</span> )</span>
 
-<span class="keyword">div</span>
-    row()
+div
+    <span class="title">row</span><span class="params">()</span>
 
-<span class="literal">gs</span>( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )
+<span class="title">gs</span><span class="params">( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )</span>
 
-<span class="keyword">div</span>
-    row()
+div
+    <span class="title">row</span><span class="params">()</span></span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
@@ -1748,43 +1748,43 @@ body
 <ul>
 <li><code>size</code>: size of the offset. <em>Optional</em> Default to <code>1</code>.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="tag">div</span>
-    <span class="function">col</span>( 1 )
-    <span class="function">offset</span>( 3 )
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="function">div
+    <span class="title">col</span><span class="params">( <span class="number">1</span> )</span>
+    <span class="title">offset</span><span class="params">( <span class="number">3</span> )</span>
 
-<span class="tag">div</span>
-    <span class="function">col</span>( 6 )
-    <span class="function">offset</span>( 6 )
+div
+    <span class="title">col</span><span class="params">( <span class="number">6</span> )</span>
+    <span class="title">offset</span><span class="params">( <span class="number">6</span> )</span>
 
-<span class="function">gs</span>( &quot;<span class="value">fixed</span>&quot;, 16, 40px, 10px )
+<span class="title">gs</span><span class="params">( <span class="string">&quot;fixed&quot;</span>, <span class="number">16</span>, <span class="number">40</span>px, <span class="number">10</span>px )</span>
 
-<span class="tag">div</span>
-    <span class="function">col</span>( 1 )
-    <span class="function">offset</span>( 3 )
+div
+    <span class="title">col</span><span class="params">( <span class="number">1</span> )</span>
+    <span class="title">offset</span><span class="params">( <span class="number">3</span> )</span>
 
-<span class="tag">div</span>
-    <span class="function">col</span>( 6 )
-    <span class="function">offset</span>( 6 )
+div
+    <span class="title">col</span><span class="params">( <span class="number">6</span> )</span>
+    <span class="title">offset</span><span class="params">( <span class="number">6</span> )</span>
 
-<span class="function">gs</span>( &quot;fluid&quot; )
+<span class="title">gs</span><span class="params">( <span class="string">&quot;fluid&quot;</span> )</span>
 
-<span class="tag">div</span>
-    <span class="function">col</span>( 1 )
-    <span class="function">offset</span>( 3 )
+div
+    <span class="title">col</span><span class="params">( <span class="number">1</span> )</span>
+    <span class="title">offset</span><span class="params">( <span class="number">3</span> )</span>
 
-<span class="tag">div</span>
-    <span class="function">col</span>( 6 )
-    <span class="function">offset</span>( 6 )
+div
+    <span class="title">col</span><span class="params">( <span class="number">6</span> )</span>
+    <span class="title">offset</span><span class="params">( <span class="number">6</span> )</span>
 
-<span class="function">gs</span>( &quot;fluid&quot;, 10, 9% )
+<span class="title">gs</span><span class="params">( <span class="string">&quot;fluid&quot;</span>, <span class="number">10</span>, <span class="number">9</span>% )</span>
 
-<span class="tag">div</span>
-    <span class="function">col</span>( 1 )
-    <span class="function">offset</span>( 3 )
+div
+    <span class="title">col</span><span class="params">( <span class="number">1</span> )</span>
+    <span class="title">offset</span><span class="params">( <span class="number">3</span> )</span>
 
-<span class="tag">div</span>
-    <span class="function">col</span>( 6 )
-    <span class="function">offset</span>( 6 )
+div
+    <span class="title">col</span><span class="params">( <span class="number">6</span> )</span>
+    <span class="title">offset</span><span class="params">( <span class="number">6</span> )</span></span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
